@@ -1,0 +1,16 @@
+.hero-container{
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+.banner-container{
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto -5px auto;
+}
+
+.static-img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}

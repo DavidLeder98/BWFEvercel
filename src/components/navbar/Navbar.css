@@ -1,0 +1,303 @@
+/* large screens */
+@media (min-width: 1601px) {
+    .navbar{
+        justify-content: space-around;
+        background-color: white;
+        height: 80px;
+        width: auto;
+        border-bottom: #bbbbbb solid 1px;
+    }
+    
+    .nav-logo{
+        height: 100%;
+        width: auto;
+        cursor: pointer;
+        padding: 5px;
+    }
+    
+    .nav-ul{
+        list-style: none;
+        gap: 40px;
+        align-items: center;
+    }
+    
+    .nav-li, .login-navitem-container{
+        color: #626262;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    
+    .nav-li:hover, .login-navitem-container:hover {
+        color: black;
+    }
+    
+    .search-icon{
+        height: 22px;
+        padding: 0 12px;
+        filter: invert(100%);
+    }
+    
+    .login-and-cart-container{
+        gap: 20px;
+    }
+    
+    .login-navitem-container{
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+    }
+    
+    .nav-username{
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #bbbbbb;
+        cursor:text;
+    }
+    
+    .nav-dropdown-account-option{
+        padding: 0 7px;
+    }
+    
+    .nav-mini-icon{
+        height: 18px;
+        width: auto;
+    }
+    
+    .cart-icon-container{
+        width: 30px;
+        align-items: center;
+        position: relative;
+        display: flex;
+    }
+    
+    .cart-icon {
+        height: 30px;
+        width:auto;
+        cursor: pointer;
+    }
+    
+    .nav-cart-count{
+        position: absolute;
+        top: 14px;
+        right: -13px;
+        width: 22px;
+        height: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 14px;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+    }
+    
+    /* login dropdown */
+    .login-navitem-container {
+        position: relative; /* To position the dropdown correctly */
+    }
+    
+    .account-dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        border: 1px solid #ccc;
+        z-index: 10;
+        width: 100%;
+    }
+    
+    .login-navitem-container:hover .account-dropdown {
+        display: block; /* Show dropdown on hover */
+    }
+    
+    .dropdown-item {
+        padding: 10px 5px;
+        text-align: center;
+        display: block;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .dropdown-item:hover {
+        background-color: #f0f0f0;
+    }
+    
+    .cna{
+        text-transform: capitalize;
+        font-size: 14px;
+    }
+    
+    /* categories */
+    .nav-cd-container{
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-cd{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: -50%;
+        z-index: 10;
+    }
+    
+    .nav-cd-container:hover .nav-cd {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px){
+    .navbar{
+        font-size: 0.9rem;
+        justify-content: space-around;
+        background-color: white;
+        height: 80px;
+        width: auto;
+        border-bottom: #bbbbbb solid 1px;
+    }
+
+    .nav-logo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-logo{
+        height: 60px;
+        width: auto;
+        cursor: pointer;
+        padding: 5px;
+    }
+    
+    .nav-ul{
+        list-style: none;
+        gap: 30px;
+        align-items: center;
+    }
+    
+    .nav-li, .login-navitem-container{
+        color: #626262;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    
+    .nav-li:hover, .login-navitem-container:hover {
+        color: black;
+    }
+    
+    .login-and-cart-container{
+        gap: 20px;
+    }
+    
+    .login-navitem-container{
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+    }
+    
+    .nav-username{
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #bbbbbb;
+        cursor:text;
+    }
+    
+    .nav-dropdown-account-option{
+        padding: 0 7px;
+    }
+    
+    .nav-mini-icon{
+        height: 18px;
+        width: auto;
+    }
+    
+    .cart-icon-container{
+        width: 30px;
+        align-items: center;
+        position: relative;
+        display: flex;
+    }
+    
+    .cart-icon {
+        height: 30px;
+        width:auto;
+        cursor: pointer;
+    }
+    
+    .nav-cart-count{
+        position: absolute;
+        top: 14px;
+        right: -13px;
+        width: 22px;
+        height: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 14px;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+    }
+    
+    /* login dropdown */
+    .login-navitem-container {
+        position: relative; /* To position the dropdown correctly */
+    }
+    
+    .account-dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        border: 1px solid #ccc;
+        z-index: 10;
+        width: 100%;
+    }
+    
+    .login-navitem-container:hover .account-dropdown {
+        display: block; /* Show dropdown on hover */
+    }
+    
+    .dropdown-item {
+        padding: 10px 5px;
+        text-align: center;
+        display: block;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .dropdown-item:hover {
+        background-color: #f0f0f0;
+    }
+    
+    .cna{
+        text-transform: capitalize;
+        font-size: 14px;
+    }
+    
+    /* categories */
+    .nav-cd-container{
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-cd{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: -50%;
+        z-index: 10;
+    }
+    
+    .nav-cd-container:hover .nav-cd {
+        display: block;
+    }
+}

@@ -1,0 +1,240 @@
+@media (min-width: 801px) and (max-width: 1200px){
+    .nav-mobile{
+        position: relative;
+    }
+
+    .nm-visible{
+        background-color: white;
+        height: 80px;
+        width: auto;
+        border-bottom: #bbbbbb solid 1px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nm-top{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 0 40px 0 20px;
+    }
+
+    .burger{
+        height: 26px;
+        width: auto;
+        cursor: pointer;
+    }
+
+    .mncd{
+        cursor: pointer;
+    }
+
+    .mobile-nav-li{
+        padding: 10px 20px;
+    }
+
+    .mobile-nav-li:hover, .mnlg-item:hover{
+        background-color: #f0f0f0;
+    }
+
+    .mn-login-group{
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+    }
+
+    .mnlg-item, .mnlg-username{
+        display: block;
+        padding: 10px 20px;
+    }
+
+    .mnlg-username{
+        text-transform: uppercase;
+    }
+
+    .mobile-logo{
+        height: 60px;
+        width: auto;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .mobile-cart-container{
+        width: 30px;
+        align-items: center;
+        position: relative;
+        display: flex;
+    }
+    
+    .cart-icon {
+        height: 30px;
+        width:auto;
+        cursor: pointer;
+    }
+    
+    .nav-cart-count{
+        position: absolute;
+        top: -8px;
+        right: -13px;
+        width: 22px;
+        height: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 14px;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+    }
+
+    .mobile-menu {
+        position: absolute;
+        top: 100%; /* Position the menu just below the navbar */
+        left: 0;
+        width: 500px;
+        padding: 10px 0;
+        background-color: #fff; /* Set a background color */
+        z-index: 1000; /* High z-index to appear over other elements */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: shadow for a layered effect */
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none; /* Initially hidden */
+    }
+    
+    .mobile-menu.open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto; /* Allow interaction when menu is open */
+    }
+    
+    /* Visible when open */
+    .mobile-menu.open {
+        display: block;
+        /* Styles for open state, such as animations */
+    }
+}
+
+@media (max-width: 800px){
+    .nav-mobile{
+        position: relative;
+    }
+
+    .nm-visible{
+        background-color: white;
+        width: auto;
+        border-bottom: #bbbbbb solid 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nm-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .burger{
+        height: 25px;
+        width: auto;
+        cursor: pointer;
+    }
+
+    .mncd{
+        cursor: pointer;
+    }
+
+    .mobile-nav-li{
+        padding: 10px 20px;
+    }
+
+    .mobile-nav-li:hover, .mnlg-item:hover{
+        background-color: #f0f0f0;
+    }
+
+    .mn-login-group{
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+    }
+
+    .mnlg-item, .mnlg-username{
+        display: block;
+        padding: 10px 20px;
+    }
+
+    .mnlg-username{
+        text-transform: uppercase;
+    }
+
+    .mobile-logo{
+        height: 60px;
+        width: auto;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .mobile-cart-container{
+        width: 30px;
+        align-items: center;
+        position: relative;
+        display: flex;
+    }
+    
+    .cart-icon {
+        height: 28px;
+        width:auto;
+        cursor: pointer;
+    }
+    
+    .nav-cart-count{
+        position: absolute;
+        top: -8px;
+        right: -10px;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 14px;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+    }
+
+    .mobile-menu {
+        position: absolute;
+        top: 100%; /* Position the menu just below the navbar */
+        left: 0;
+        width: 75%;
+        padding: 10px 0;
+        background-color: #fff; /* Set a background color */
+        z-index: 1000; /* High z-index to appear over other elements */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: shadow for a layered effect */
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none; /* Initially hidden */
+    }
+    
+    .mobile-menu.open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto; /* Allow interaction when menu is open */
+    }
+    
+    /* Visible when open */
+    .mobile-menu.open {
+        display: block;
+        /* Styles for open state, such as animations */
+    }
+
+    .mobile-qsb-container{
+        width: 100%;
+        max-width: 500px;
+        padding: 10px;
+    }
+}

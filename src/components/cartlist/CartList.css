@@ -1,0 +1,123 @@
+.cart-list-container{
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto 100px auto;
+}
+
+.cl-h1{
+    padding: 20px;
+    text-align: center;
+}
+
+.cl-empty{
+    margin: 20px auto;
+}
+
+.cl-table{
+    padding: 20px;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+.cl-bot:hover{
+    background-color: #dddddd;
+}
+
+.cl-top th{
+    text-align: left;
+}
+
+.cl-top th{
+    padding: 10px 0;
+}
+
+.cl-img{
+    height: 100px;
+    width: 75px;
+    margin: 5px 20px;
+}
+
+.cl-title{
+    text-transform: uppercase;
+}
+
+.cl-list-price{
+    text-decoration: line-through;
+}
+
+.cl-price{
+    color: rgb(189, 8, 8);
+}
+
+.cl-total{
+    font-size: 1.2rem;
+}
+
+.cl-input{
+    width: 60px; /* Adjust size as necessary */
+    padding: 5px;
+    text-align: center; /* Center the text */
+}
+
+.cl-remove{
+    padding: 5px;
+    outline: none;
+    border: none;
+    background-color: #dc3545;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.cl-remove:hover{
+    opacity: 0.8;
+}
+
+.cl-sum{
+    font-size: 1.4rem;
+    padding: 20px 0;
+    font-weight: 800;
+}
+
+.purchase-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.purchase-btn {
+    background-color: #017c4d;
+    border: 3px solid #017c4d;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;    
+    cursor: pointer;
+    gap: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.purchase-btn img {
+    filter: invert(1);
+    transition: filter 0.3s ease; /* Smooth transition for the image */
+}
+
+.purchase-btn p {
+    font-size: 1.4rem;
+    color: #ffffff;
+    transition: color 0.3s ease; /* Smooth transition for the text color */
+}
+
+.purchase-btn:hover {
+    background-color: #ffffff;
+}
+
+.purchase-btn:hover img {
+    filter: invert(0); /* Remove the inversion on hover to show original color */
+}
+
+.purchase-btn:hover p {
+    color: #000000; /* Change text color on hover */
+}

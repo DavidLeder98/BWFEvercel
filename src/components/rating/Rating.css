@@ -1,0 +1,9 @@
+.star {
+    color: #df7701;
+    font-size: 16px;
+    margin-right: 2px;
+}
+
+.empty-star {
+    color: white;
+}

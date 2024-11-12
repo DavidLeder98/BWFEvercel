@@ -1,0 +1,93 @@
+.all-books-container{
+    max-width: 1450px;
+    background-color: white;
+    margin: 15px auto;
+}
+
+.bd-positioner{
+    width: 100%;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px); /* Fixed column width */
+    grid-auto-rows: 400px; /* Ensures all cards have the same height */
+    justify-content: center; /* Aligns the items to the start */
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
+    padding: 0 20px; /* Optional padding for the container */
+}
+
+.ab-controlls {
+    display: flex;
+    justify-content: space-between; /* Space between the input and select */
+    align-items: center; /* Center vertically */
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.ab-search-bar[type="text"],
+.ab-select {
+    padding: 10px 15px; /* Padding inside the input and select */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transition for border color and shadow */
+    width: 100%; /* Make them full width of their container */
+    max-width: 300px; /* Max width for input and select */
+}
+
+.ab-search-bar[type="text"]:focus,
+.ab-select:focus {
+    outline: none; /* Remove default outline */
+    border-color: #007BFF; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a shadow effect on focus */
+}
+
+.ab-search-bar[type="text"]::placeholder {
+    color: #aaa; /* Placeholder color */
+}
+
+.ab-select {
+    background-color: #fff; /* Background color */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Style for the options in select dropdown */
+.ab-select option {
+    padding: 10px; /* Padding for options */
+}
+
+.ab-h1{
+    text-transform: uppercase;
+}
+
+.search-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.search-tag {
+    background-color: #ce5200;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.search-tag button {
+    background: none;
+    border: none;
+    color: white;
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.search-tag button:hover {
+    color: black;
+}

@@ -1,0 +1,112 @@
+/* Base button styles */
+.button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Disabled button */
+.button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Filled variant */
+.button.filled {
+    color: white;
+    border: none;
+}
+
+.button.filled:hover {
+    opacity: 0.8;
+}
+
+/* Outlined variant */
+.button.outlined {
+    background-color: transparent;
+    border: 2px solid;
+}
+
+/* Color styles */
+.button.blue {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.button.red {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.button.gray {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.button.green {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.button.black {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+/* Outlined colors */
+
+.button.outlined{
+    background-color: white;
+}
+
+.button.outlined.blue {
+    color: #007bff;
+}
+
+.button.outlined.red {
+    color: #dc3545;
+}
+
+.button.outlined.gray {
+    color: #6c757d;
+}
+
+.button.outlined.green {
+    color: #4CAF50;
+}
+
+.button.outlined.black {
+    color: #000000;
+}
+
+/* Hover effects for outlined buttons */
+.button.outlined.blue:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.button.outlined.red:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+.button.outlined.gray:hover {
+    background-color: #6c757d;
+    color: white;
+}
+
+.button.outlined.green:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button.outlined.black:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.ap-back-button{
+    width: 200px;
+}

@@ -1,0 +1,29 @@
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.allcaps{
+    text-transform: uppercase;
+}
+
+.fw-400{
+    font-weight: 400;
+}
+
+.fw-b{
+    font-weight: 800;
+}
+
+.main-content{
+    min-height: 100vh;
+}
+
+ul{
+    list-style: none;
+}
