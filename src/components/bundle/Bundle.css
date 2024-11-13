@@ -123,9 +123,8 @@
     
     /* Card styles */
     .card {
-        width: 220px; /* Set card width */
-        height: 380px; /* Make height responsive to parent container */
-        transition: transform 0.3s ease; /* Add transition for hover effect */
+        width: 180px; /* Set card width */
+        height: 320px; /* Make height responsive to parent container */
         display: flex; /* Flex to enable alignment */
         flex-direction: column; /* Arrange card content vertically */
         overflow: hidden; /* Prevent content overflow */
