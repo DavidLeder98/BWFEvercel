@@ -124,7 +124,7 @@
     /* Card styles */
     .card {
         width: 180px; /* Set card width */
-        height: 300px; /* Make height responsive to parent container */
+        height: 320px; /* Make height responsive to parent container */
         display: flex; /* Flex to enable alignment */
         flex-direction: column; /* Arrange card content vertically */
         overflow: hidden; /* Prevent content overflow */
