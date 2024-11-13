@@ -130,13 +130,7 @@ const NavMobile = () => {
                     <li className="mobile-nav-li mncd" onClick={toggleCategories} ref={categoriesRef}>
                         Categories
                     </li>
-                    {categoriesOpen && (
-                        <div className="mn-cdd" ref={dropdownRef}>
-                            <CategoriesDropdown />
-                        </div>
-                    )}
-                    {/* Pre-load dropdown as hidden element */}
-                    <div className="mn-cdd hidden">
+                    <div className={`mn-cdd ${categoriesOpen ? 'visible' : ''}`} ref={dropdownRef}>
                         <CategoriesDropdown />
                     </div>
                     <Link to="/" onClick={closeMenuOnLinkClick}><li className="mobile-nav-li">Home</li></Link>

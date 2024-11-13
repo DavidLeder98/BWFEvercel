@@ -238,7 +238,11 @@
         padding: 10px;
     }
 
-    .hidden {
-        display: none;
+    .mn-cdd {
+        display: none; /* Hidden by default */
+    }
+    
+    .mn-cdd.visible {
+        display: block; /* Displayed when `visible` class is added */
     }
 }
