@@ -118,7 +118,7 @@
         justify-content: center; /* Center cards within the slide */
         align-items: flex-start; /* Align cards at the start to avoid stretching */
         padding: 0 10px; /* Space between slides */
-        height: 400px; /* Set a fixed height to prevent deformation */
+        height: 340px; /* Set a fixed height to prevent deformation */
     }
     
     /* Card styles */
