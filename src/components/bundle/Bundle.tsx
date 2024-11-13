@@ -73,7 +73,6 @@ const Bundle: React.FC<BundleProps> = ({ id }) => {
         speed: 500,
         slidesToShow: 6,
         slidesToScroll: 2,
-        centerMode: true,
         prevArrow: <PrevArrow />, 
         nextArrow: <NextArrow />, 
         responsive: [
