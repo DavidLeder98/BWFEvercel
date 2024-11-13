@@ -177,18 +177,19 @@
         margin-top: 5px;
         justify-content: center;
         align-items: center;
-        font-size: 1rem;
     }
     
     .card-price{
         padding: 0 10px;
         color: #dc3545;
+        font-size: 1rem;
     }
     
     .card-list-price{
         padding: 0 10px;
         color: gray;
         text-decoration: line-through;
+        font-size: 0.9rem;
     }
     
     .card-button-container{
