@@ -114,6 +114,14 @@
         display: block;
         /* Styles for open state, such as animations */
     }
+
+    .mn-cdd {
+        display: none; /* Hidden by default */
+    }
+    
+    .mn-cdd.visible {
+        display: block; /* Displayed when `visible` class is added */
+    }
 }
 
 @media (max-width: 800px){

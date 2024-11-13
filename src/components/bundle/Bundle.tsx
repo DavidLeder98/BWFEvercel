@@ -71,32 +71,32 @@ const Bundle: React.FC<BundleProps> = ({ id }) => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 6, // Default to show 6 items
+        slidesToShow: 6,
         slidesToScroll: 2,
         prevArrow: <PrevArrow />, 
         nextArrow: <NextArrow />, 
         responsive: [
             {
-                breakpoint: 1600, // For screens smaller than 1600px
+                breakpoint: 1600,
                 settings: {
-                    slidesToShow: 5, // Show 4 items
+                    slidesToShow: 5,
                     slidesToScroll: 2,
                 },
             },
             {
-                breakpoint: 1400, // For screens smaller than 1600px
+                breakpoint: 1400,
                 settings: {
-                    slidesToShow: 4, // Show 4 items
+                    slidesToShow: 4,
                     slidesToScroll: 1,
                 },
             },
             {
-                breakpoint: 1200, // For screens smaller than 1600px
+                breakpoint: 1200,
                 settings: {
-                    slidesToShow: 3, // Show 4 items
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                 },
-            },
+            }
         ],
     };
 

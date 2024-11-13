@@ -85,3 +85,13 @@
         width: 750px
     }
 }
+
+@media (max-width: 900px) {
+    .slick-prev, .slick-next {
+        display: none;
+    }
+
+    .bundle-container{
+        width: 100%
+    }
+}
