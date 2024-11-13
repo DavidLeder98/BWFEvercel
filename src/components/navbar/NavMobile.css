@@ -237,4 +237,8 @@
         max-width: 500px;
         padding: 10px;
     }
+
+    .hidden {
+        display: none;
+    }
 }

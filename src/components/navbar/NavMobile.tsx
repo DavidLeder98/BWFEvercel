@@ -135,6 +135,10 @@ const NavMobile = () => {
                             <CategoriesDropdown />
                         </div>
                     )}
+                    {/* Pre-load dropdown as hidden element */}
+                    <div className="mn-cdd hidden">
+                        <CategoriesDropdown />
+                    </div>
                     <Link to="/" onClick={closeMenuOnLinkClick}><li className="mobile-nav-li">Home</li></Link>
                     <Link to="/deals" onClick={closeMenuOnLinkClick}><li className="mobile-nav-li">Deals & Coupons</li></Link>
                     <Link to="/bestsellers" onClick={closeMenuOnLinkClick}><li className="mobile-nav-li">Best Sellers</li></Link>
