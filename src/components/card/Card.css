@@ -1,96 +1,193 @@
-.card {
-    background-color: #fff;
-    overflow: hidden;
-    width: 220px;
-    height: 380px;
-    text-align: center;
-    position: relative;
+@media (min-width: 901px){
+    .card {
+        background-color: #fff;
+        overflow: hidden;
+        width: 220px;
+        height: 380px;
+        text-align: center;
+        position: relative;
+    }
+    
+    .card:hover {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .img-container{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        height: 200px;
+        width: auto;
+        overflow: hidden;
+    }
+    
+    .card-img {
+        height: 100%;
+        width: auto;
+    }
+    
+    .to-card-details{
+        cursor: pointer;
+    }
+    
+    .card-title{
+        margin-top: 10px;
+        padding: 0 10px;
+        overflow: hidden;
+        position: relative;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+    
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Limit to 3 lines */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.2em; /* Adjust line height for readability */
+        height: calc(1.2em * 2); /* Ensures title height stays fixed */
+    }
+    
+    .card-author{
+        padding: 0 15px;
+        overflow: hidden;
+        position: relative;
+        color: gray;
+        font-size: 0.9rem;
+    
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Limit to 2 lines for author */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.2em;
+        height: calc(1.2em * 2); /* Ensures author height stays fixed */
+    }
+    
+    .best-seller-container{
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        height: 80px;
+        width: auto;
+    }
+    
+    .price-container{
+        margin-top: 5px;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1rem;
+    }
+    
+    .card-price{
+        padding: 0 10px;
+        color: #dc3545;
+    }
+    
+    .card-list-price{
+        padding: 0 10px;
+        color: gray;
+        text-decoration: line-through;
+    }
+    
+    .card-button-container{
+        margin-top: 7px;
+    }
 }
 
-.card:hover {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.img-container{
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    height: 200px;
-    width: auto;
-    overflow: hidden;
-}
-
-.card-img {
-    height: 100%;
-    width: auto;
-}
-
-.to-card-details{
-    cursor: pointer;
-}
-
-.card-title{
-    margin-top: 10px;
-    padding: 0 10px;
-    overflow: hidden;
-    position: relative;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-
-    display: -webkit-box;
-    -webkit-line-clamp: 2; /* Limit to 3 lines */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: 1.2em; /* Adjust line height for readability */
-    height: calc(1.2em * 2); /* Ensures title height stays fixed */
-}
-
-.card-author{
-    padding: 0 15px;
-    overflow: hidden;
-    position: relative;
-    color: gray;
-    font-size: 0.9rem;
-
-    display: -webkit-box;
-    -webkit-line-clamp: 2; /* Limit to 2 lines for author */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: 1.2em;
-    height: calc(1.2em * 2); /* Ensures author height stays fixed */
-}
-
-.best-seller-container{
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    height: 80px;
-    width: auto;
-}
-
-.price-container{
-    margin-top: 5px;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.1rem;
-}
-
-.card-price{
-    padding: 0 10px;
-    color: #dc3545;
-}
-
-.card-list-price{
-    padding: 0 10px;
-    color: gray;
-    text-decoration: line-through;
-}
-
-.card-button-container{
-    margin-top: 7px;
+@media (max-width: 900px){
+    .card {
+        background-color: #fff;
+        overflow: hidden;
+        width: 220px;
+        height: 380px;
+        text-align: center;
+        position: relative;
+    }
+    
+    .img-container{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        height: 200px;
+        width: auto;
+        overflow: hidden;
+    }
+    
+    .card-img {
+        height: 100%;
+        width: auto;
+    }
+    
+    .to-card-details{
+        cursor: pointer;
+    }
+    
+    .card-title{
+        margin-top: 10px;
+        padding: 0 10px;
+        overflow: hidden;
+        position: relative;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+    
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Limit to 3 lines */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.2em; /* Adjust line height for readability */
+        height: calc(1.2em * 2); /* Ensures title height stays fixed */
+    }
+    
+    .card-author{
+        padding: 0 15px;
+        overflow: hidden;
+        position: relative;
+        color: gray;
+        font-size: 0.9rem;
+    
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Limit to 2 lines for author */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.2em;
+        height: calc(1.2em * 2); /* Ensures author height stays fixed */
+    }
+    
+    .best-seller-container{
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        height: 80px;
+        width: auto;
+    }
+    
+    .price-container{
+        margin-top: 5px;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1rem;
+    }
+    
+    .card-price{
+        padding: 0 10px;
+        color: #dc3545;
+    }
+    
+    .card-list-price{
+        padding: 0 10px;
+        color: gray;
+        text-decoration: line-through;
+    }
+    
+    .card-button-container{
+        margin-top: 7px;
+    }
 }
