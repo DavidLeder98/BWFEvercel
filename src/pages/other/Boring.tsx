@@ -1,7 +1,12 @@
 import './Other.css';
 import egg from '../../assets/other/egg.mp4';
+import { useEffect } from 'react';
 
 const Boring = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return(
         <div className="context-page">
             <h1>&#x1F389; Congratulations! &#x1F389;</h1>

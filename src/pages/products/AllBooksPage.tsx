@@ -3,6 +3,10 @@ import { useEffect } from 'react';
 import BookList from "../../components/booklist/BookList";
 
 const AllBooksPage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const [searchParams] = useSearchParams();
     const searchTag = searchParams.get('search') || ''; // Get the search term from the URL
 

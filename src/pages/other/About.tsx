@@ -1,7 +1,12 @@
 import './Other.css';
 import BtnHome from '../../components/pageend/BtnHome';
+import { useEffect } from 'react';
 
 const About = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return(
         <div className="context-page">
             <h1>Welcome!</h1>

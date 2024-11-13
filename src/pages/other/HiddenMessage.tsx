@@ -1,6 +1,12 @@
 import './Other.css';
+import { useEffect } from 'react';
+
 
 const HiddenMessage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return(
         <div className="context-page">
             <h2>Wanna go on a quest? &#x1F642;</h2>

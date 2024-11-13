@@ -1,7 +1,12 @@
 import { useParams } from "react-router-dom";
 import AuthorWithBooks from "../../components/authorwithbooks/AuthorWithBooks";
+import { useEffect } from 'react';
 
 const AuthorPage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const { id } = useParams<{ id: string }>();
 
     // Safely parse the id and handle cases where id is undefined

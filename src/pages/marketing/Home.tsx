@@ -3,8 +3,13 @@ import Hero from '../../components/banners/Hero';
 import AuthorsBanner from '../../components/banners/AuthorsBanner';
 import DealsBanner from '../../components/banners/DealsBanner';
 import BtnProducts from '../../components/pageend/BtnProducts';
+import { useEffect } from 'react';
 
 const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div>
             <Hero />
