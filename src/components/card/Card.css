@@ -75,6 +75,8 @@
     }
     
     .price-container{
+        display: flex;
+        flex-direction: row;
         margin-top: 5px;
         justify-content: center;
         align-items: center;
@@ -170,6 +172,8 @@
     }
     
     .price-container{
+        display: flex;
+        flex-direction: column;
         margin-top: 5px;
         justify-content: center;
         align-items: center;

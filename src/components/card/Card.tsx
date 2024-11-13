@@ -86,7 +86,7 @@ const Card = ({ book, showNotification }: ItemProps) => {
                     <div className="card-info-container">
                         <p className="card-title">{book.title}</p>
                         <p className="card-author">{book.authorName}</p>
-                        <div className="price-container row">
+                        <div className="price-container">
                             <p className="card-price">{formatCurrency(book.price)}</p>
                             <p className="card-list-price">{formatCurrency(book.listPrice)}</p>
                         </div>

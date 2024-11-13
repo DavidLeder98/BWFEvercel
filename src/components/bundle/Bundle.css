@@ -99,7 +99,7 @@
 
     .bundle-container {
         margin: 0 auto;
-        padding: 20px 10px;
+        padding: 10px;
         background-color: white;
     }
     
@@ -118,13 +118,13 @@
         justify-content: center; /* Center cards within the slide */
         align-items: flex-start; /* Align cards at the start to avoid stretching */
         padding: 0 10px; /* Space between slides */
-        height: 320px; /* Set a fixed height to prevent deformation */
+        height: 330px; /* Set a fixed height to prevent deformation */
     }
     
     /* Card styles */
     .card {
         width: 180px; /* Set card width */
-        height: 320px; /* Make height responsive to parent container */
+        height: 330px; /* Make height responsive to parent container */
         display: flex; /* Flex to enable alignment */
         flex-direction: column; /* Arrange card content vertically */
         overflow: hidden; /* Prevent content overflow */
