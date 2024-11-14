@@ -73,7 +73,7 @@ const AccountUpdate: React.FC = () => {
         <input type="text" name="state" value={formData.state} onChange={handleChange} placeholder="State" className="account-input" />
         <input type="text" name="zipCode" value={formData.zipCode} onChange={handleChange} placeholder="Zip Code" className="account-input" />
         {error && <p style={{ color: 'red' }}>{error}</p>}
-        <div className="albc">
+        <div className="albc2">
           <button className="reg-btn" type="submit">Update Details</button>
         </div>
       </form>

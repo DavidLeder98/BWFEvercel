@@ -50,11 +50,11 @@ const Account: React.FC = () => {
   return (
     <div className="account-details-container">
       {showNotification && <AddNotification message={message} />} {/* Render notification if present */}
-      <h1>Account Information</h1>
       {loading ? (
         <p>Loading user profile...</p>
       ) : (
         <div className="account-info">
+          <h1>Account Information</h1>
           <p><strong>Username:</strong> {userProfile?.username}</p>
           <p><strong>Email:</strong> {userProfile?.email}</p>
           <p><strong>First Name:</strong> {userProfile?.firstName}</p>

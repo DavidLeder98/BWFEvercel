@@ -8,6 +8,16 @@
     padding: 20px;
 }
 
+.account-update-container{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .account-details-container{
     width: 100%;
     max-width: 400px;
@@ -47,8 +57,6 @@
 }
 
 .albc{
-    width: 30%;
-    max-width: 100px;
     margin: 20px auto;
     display: flex;
     justify-content: center;
