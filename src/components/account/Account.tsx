@@ -64,9 +64,9 @@ const Account: React.FC = () => {
           <p><strong>City:</strong> {userProfile?.city}</p>
           <p><strong>State:</strong> {userProfile?.state}</p>
           <p><strong>Zip Code:</strong> {userProfile?.zipCode}</p>
-          <Link className="reg-btn" to="/account/update">Edit Details</Link>
         </div>
       )}
+      <Link className="reg-btn" to="/account/update">Edit Details</Link>
     </div>
   );
 };
