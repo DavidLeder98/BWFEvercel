@@ -132,7 +132,6 @@
 @media (min-width: 1100px) and (max-width: 801px){
     .book-details-container{
         width: 100%;
-        max-width: 1450px;
         margin: 20px auto;
         background-color: white;
         padding: 25px 50px 50px 25px;
@@ -144,7 +143,7 @@
     .bd-left{
         width: auto;
         height: auto;
-        margin-right: 40px;
+        margin-right: 80px;
     }
     
     .bd-right{
