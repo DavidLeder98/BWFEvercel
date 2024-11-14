@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useAuth } from '../../services/account/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import Button from '../button/Button';
+import { Link } from 'react-router-dom';
 import './Account.css';
 
 const Login = () => {
@@ -42,7 +43,8 @@ const Login = () => {
         onChange={(e) => setPassword(e.target.value)}
         className="account-input"
       />
-      <div className="acc-login-button">
+      <Link to="/register">Create new account</Link>
+      <div className="albc">
         <Button text="Login" onClick={handleLogin} variant="filled" color="blue" />
       </div>
 

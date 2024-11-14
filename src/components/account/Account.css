@@ -1,10 +1,10 @@
 .account-component-container{
     width: 100%;
-    max-width: 800px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 .account-component-container h2{
@@ -13,7 +13,7 @@
 }
 
 .account-input{
-    padding: 5px;
+    padding: 10px;
     margin: 10px;
     font-size: 1.1rem;
     border-radius: 5px;
@@ -26,8 +26,12 @@
     box-shadow: 0 0 5px #007BFF;
 }
 
-.acc-login-button{
+.albc{
     width: 30%;
+    max-width: 100px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
 }
 
 .account-details-container{
