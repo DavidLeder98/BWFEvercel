@@ -70,7 +70,9 @@ const BookList = ({ initialSearchTag = '' }: BookListProps) => {
                             onChange={(e) => setSearchTerm(e.target.value)} 
                             onKeyDown={(e) => { if (e.key === 'Enter') addSearchTag(); }} // Add search tag on Enter
                         />
-                        <Button text="Search" onClick={addSearchTag} variant="outlined" color="blue" />
+                        <div>
+                            <Button text="Search" onClick={addSearchTag} variant="outlined" color="blue" />
+                        </div>
                     </div>
                     <select 
                         className="ab-select"
