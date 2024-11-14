@@ -64,17 +64,19 @@ const AccountUpdate: React.FC = () => {
   return (
     <div className="account-details-container">
       <h2>Update Account Information</h2>
-      <form onSubmit={handleSubmit}>
-        <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} placeholder="First Name" />
-        <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} placeholder="Last Name" />
-        <input type="text" name="telNumber" value={formData.telNumber} onChange={handleChange} placeholder="Phone Number" />
-        <input type="text" name="address" value={formData.address} onChange={handleChange} placeholder="Address" />
-        <input type="text" name="city" value={formData.city} onChange={handleChange} placeholder="City" />
-        <input type="text" name="state" value={formData.state} onChange={handleChange} placeholder="State" />
-        <input type="text" name="zipCode" value={formData.zipCode} onChange={handleChange} placeholder="Zip Code" />
-        <button type="submit">Update Profile</button>
+      <form onSubmit={handleSubmit} className="account-component-container">
+        <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} placeholder="First Name" className="account-input" />
+        <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} placeholder="Last Name" className="account-input" />
+        <input type="text" name="telNumber" value={formData.telNumber} onChange={handleChange} placeholder="Phone Number" className="account-input" />
+        <input type="text" name="address" value={formData.address} onChange={handleChange} placeholder="Address" className="account-input" />
+        <input type="text" name="city" value={formData.city} onChange={handleChange} placeholder="City" className="account-input" />
+        <input type="text" name="state" value={formData.state} onChange={handleChange} placeholder="State" className="account-input" />
+        <input type="text" name="zipCode" value={formData.zipCode} onChange={handleChange} placeholder="Zip Code" className="account-input" />
+        {error && <p style={{ color: 'red' }}>{error}</p>}
+        <div className="albc">
+          <button className="reg-btn" type="submit">Update Details</button>
+        </div>
       </form>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
     </div>
   );
 };
