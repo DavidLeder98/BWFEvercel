@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import { useAuth } from '../../services/account/AuthContext';
-import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import './Account.css';
-import './AccBtn.css'
+import './AccBtn.css';
 
 const Login = () => {
   const { login } = useAuth();
@@ -11,16 +10,14 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
 
-  // React Router's navigate function
   const navigate = useNavigate();
 
-  const handleLogin = async () => {
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault(); // Prevents default form submission behavior
     try {
       setError(null);
       await login(username, password);
-
-      // Redirect to home page or protected page
-      navigate('/account');
+      navigate('/account'); // Redirect to home page or protected page
     } catch (err) {
       setError('Invalid login credentials');
     }
@@ -29,24 +26,26 @@ const Login = () => {
   return (
     <div className="account-component-container">
       <h2>Login</h2>
-      <input
-        type="text"
-        placeholder="Username"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-        className="account-input"
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        className="account-input"
-      />
-      <Link to="/register" className="reg-link">Don't have an account?</Link>
-      <div className="albc">
-        <button className="reg-btn" onClick={handleLogin}>Login</button>
-      </div>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          className="account-input"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          className="account-input"
+        />
+        <Link to="/register" className="reg-link">Don't have an account?</Link>
+        <div className="albc">
+          <button className="reg-btn" type="submit">Login</button> {/* Submit button */}
+        </div>
+      </form>
 
       {/* Display error message if login fails */}
       {error && <p style={{ color: 'red' }}>{error}</p>}
