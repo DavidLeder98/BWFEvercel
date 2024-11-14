@@ -42,7 +42,6 @@ const Register = () => {
             type="text" 
             value={username} 
             onChange={(e) => setUsername(e.target.value)} 
-            placeholder="example123"
             required 
             className="account-input"
           />
@@ -53,7 +52,6 @@ const Register = () => {
             type="email" 
             value={email} 
             onChange={(e) => setEmail(e.target.value)} 
-            placeholder="example@email.com"
             required 
             className="account-input"
           />
