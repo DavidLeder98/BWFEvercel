@@ -45,7 +45,7 @@ const Login = () => {
       />
       <Link to="/register" className="reg-link">Don't have an account?</Link>
       <div className="albc">
-        <button className="reg-link" onClick={handleLogin}>Login</button>
+        <button className="reg-btn" onClick={handleLogin}>Login</button>
       </div>
 
       {/* Display error message if login fails */}

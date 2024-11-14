@@ -35,7 +35,6 @@ const Register = () => {
   return (
     <div className="account-component-container">
       <h2>Register</h2>
-      {error && <p style={{ color: 'red' }}>{error}</p>} {/* Display specific error messages */}
       <form onSubmit={handleSubmit}>
         <div className="account-input-container">
           <label>Username:</label>
@@ -43,6 +42,7 @@ const Register = () => {
             type="text" 
             value={username} 
             onChange={(e) => setUsername(e.target.value)} 
+            placeholder="example123"
             required 
             className="account-input"
           />
@@ -53,6 +53,7 @@ const Register = () => {
             type="email" 
             value={email} 
             onChange={(e) => setEmail(e.target.value)} 
+            placeholder="example@email.com"
             required 
             className="account-input"
           />
@@ -62,7 +63,7 @@ const Register = () => {
           <input 
             type="password" 
             value={password} 
-            onChange={(e) => setPassword(e.target.value)} 
+            onChange={(e) => setPassword(e.target.value)}
             required
             className="account-input" 
           />
@@ -77,6 +78,7 @@ const Register = () => {
             className="account-input" 
           />
         </div>
+        {error && <p style={{ color: 'red' }}>{error}</p>} {/* Display specific error messages */}
         <Link to="/login" className="reg-link">Already have an account?</Link>
         <div className="albc">
           <button className="reg-btn" type="submit">Register</button>
