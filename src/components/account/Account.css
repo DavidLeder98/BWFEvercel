@@ -5,11 +5,15 @@
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    padding: 20px 10px;
+    padding: 20px;
 }
 
 .account-component-container h2{
     text-align: center;
+    padding: 10px;
+}
+
+.account-component-container h1{
     padding: 10px;
 }
 
@@ -52,4 +56,8 @@
     max-width: 1000px;
     padding: 20px;
     margin: 20px auto 40px auto;
+}
+
+.account-info p{
+    padding: 7px 0;
 }

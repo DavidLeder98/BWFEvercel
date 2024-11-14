@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useAuth } from '../../services/account/AuthContext';
 import './Account.css';
+import './AccBtn.css';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import AddNotification from '../notification/AddNotification';
@@ -47,13 +48,13 @@ const Account: React.FC = () => {
   }, [message]);
 
   return (
-    <div className="account-details-container">
+    <div className="account-component-container">
       {showNotification && <AddNotification message={message} />} {/* Render notification if present */}
       <h1>Account Information</h1>
       {loading ? (
         <p>Loading user profile...</p>
       ) : (
-        <div>
+        <div className="account-info">
           <p><strong>Username:</strong> {userProfile?.username}</p>
           <p><strong>Email:</strong> {userProfile?.email}</p>
           <p><strong>First Name:</strong> {userProfile?.firstName}</p>
@@ -63,7 +64,7 @@ const Account: React.FC = () => {
           <p><strong>City:</strong> {userProfile?.city}</p>
           <p><strong>State:</strong> {userProfile?.state}</p>
           <p><strong>Zip Code:</strong> {userProfile?.zipCode}</p>
-          <Link to="/account/update">Edit Details</Link>
+          <Link className="reg-btn" to="/account/update">Edit Details</Link>
         </div>
       )}
     </div>

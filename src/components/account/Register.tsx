@@ -26,7 +26,7 @@ const Register = () => {
     try {
       await register(username, email, password); // Call the register function
       await login(username, password); // Automatically log in the user after successful registration
-      navigate('/'); // Redirect to homepage or any other route after registration and login
+      navigate('/account'); // Redirect to homepage or any other route after registration and login
     } catch (err) {
       setError((err as Error).message); // Handle error with specific message
     }
