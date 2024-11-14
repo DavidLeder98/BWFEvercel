@@ -63,7 +63,7 @@ const AccountUpdate: React.FC = () => {
 
   return (
     <div className="account-details-container">
-      <form onSubmit={handleSubmit} className="account-component-container">
+      <form onSubmit={handleSubmit} className="account-update-container">
         <h2>Update Account Information</h2>
         <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} placeholder="First Name" className="account-input" />
         <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} placeholder="Last Name" className="account-input" />
