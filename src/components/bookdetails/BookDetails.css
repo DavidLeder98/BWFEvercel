@@ -268,7 +268,7 @@
         width: 100%;
         margin: 20px auto;
         background-color: white;
-        padding: 0 20px 50px 20px;
+        padding: 10px 20px 50px 20px;
         border-bottom: 1px solid #bbbbbb;
         display: flex;
         flex-direction: column;
@@ -332,9 +332,15 @@
     .bd-categories-li:hover{
         background-color: #df7701;
     }
+
+    .bd-title{
+        margin: 10px 0 0 0;
+        font-size: 0.9rem;
+    }
     
     .bd-author{
         margin: 10px 0;
+        font-size: 0.9rem;
     }
     
     .bd-author a:hover{
