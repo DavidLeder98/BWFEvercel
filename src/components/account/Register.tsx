@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useAuth } from '../../services/account/AuthContext'; // Import useAuth hook
 import { useNavigate } from 'react-router-dom'; // To redirect after successful registration
+import { Link } from 'react-router-dom';
 import './Account.css';
 import './AccBtn.css'
 
@@ -76,6 +77,7 @@ const Register = () => {
             className="account-input" 
           />
         </div>
+        <Link to="/login" className="reg-link">Already have an account?</Link>
         <div className="albc">
           <button className="reg-btn" type="submit">Register</button>
         </div>
