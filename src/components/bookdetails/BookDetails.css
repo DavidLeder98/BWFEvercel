@@ -48,6 +48,8 @@
     .bd-categories-ul{
         list-style: none;
         margin-top: 5px;
+        display: flex;
+        flex-direction: row;
     }
     
     .bd-categories-li{
@@ -178,6 +180,8 @@
     .bd-categories-ul{
         list-style: none;
         margin-top: 5px;
+        display: flex;
+        flex-direction: row;
     }
     
     .bd-categories-li{
@@ -281,8 +285,9 @@
     }
     
     .bd-image-container{
-        width: auto;
-        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     
     .bd-image{
@@ -291,6 +296,7 @@
     }
     
     .bd-best-seller{
+        width: 300px;
         text-align: center;
         color: white;
         background-color: #dc3545;
@@ -299,12 +305,13 @@
     }
     
     .bd-categories{
-        margin-top: 20px;
+        margin: 20px 0;
     }
     
     .bd-categories-ul{
         list-style: none;
         margin-top: 5px;
+        display: flex;
     }
     
     .bd-categories-li{

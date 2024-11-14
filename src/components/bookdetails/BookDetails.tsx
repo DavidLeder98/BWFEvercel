@@ -115,7 +115,7 @@ const BookDetails: React.FC<BookDetailsProps> = ({ bookId }) => {
                 </div>
                 <div className="bd-categories col">
                     <h3 className="fw-400">Categories:</h3>
-                    <ul className="bd-categories-ul row">
+                    <ul className="bd-categories-ul">
                         {bookDetails.categories.map((category) => (
                             <Link to={`/category/${category.id}`} key={category.id} className="bd-categories-li">
                                 <li>{category.name}</li>
