@@ -37,6 +37,7 @@
 .reg-link{
     color: #007BFF;
     text-decoration: underline;
+    margin: 8px 0;
 }
 
 .account-details-container{
