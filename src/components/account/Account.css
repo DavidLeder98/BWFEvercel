@@ -16,6 +16,7 @@
 .account-input-container{
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .account-input{
@@ -43,7 +44,7 @@
 .reg-link{
     color: #007BFF;
     text-decoration: underline;
-    margin: 8px 0;
+    margin: 8px 0 15px;
 }
 
 .account-details-container{
