@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useAuth } from '../../services/account/AuthContext';
 import { useNavigate } from 'react-router-dom';
+import Button from '../button/Button';
 import './Account.css';
 
 const Login = () => {
@@ -41,7 +42,7 @@ const Login = () => {
         onChange={(e) => setPassword(e.target.value)}
         className="account-input"
       />
-      <button onClick={handleLogin}>Login</button>
+      <Button text="Login" onClick={handleLogin} variant="filled" color="blue" />
 
       {/* Display error message if login fails */}
       {error && <p style={{ color: 'red' }}>{error}</p>}

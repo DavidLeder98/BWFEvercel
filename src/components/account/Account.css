@@ -5,8 +5,14 @@
     flex-direction: column;
 }
 
+.account-component-container h2{
+    text-align: center;
+    padding: 10px;
+}
+
 .account-input{
-    line-height: 1.1rem;
+    padding: 10px;
+    font-size: 1.25rem;
     border-radius: 5px;
     outline: none;
     border: 1px solid #ccc;
