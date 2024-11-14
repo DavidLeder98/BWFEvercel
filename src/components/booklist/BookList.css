@@ -109,11 +109,11 @@
     
     .book-list {
         display: grid;
-        grid-template-columns: repeat(auto-fill, 190px); /* Fixed column width */
+        grid-template-columns: repeat(auto-fill, 170px); /* Fixed column width */
         grid-auto-rows: 350px; /* Ensures all cards have the same height */
         justify-content: center; /* Aligns the items to the start */
         overflow-x: auto; /* Allows horizontal scrolling if needed */
-        padding: 0 20px; /* Optional padding for the container */
+        padding: 0 10px; /* Optional padding for the container */
     }
     
     .ab-controlls {
