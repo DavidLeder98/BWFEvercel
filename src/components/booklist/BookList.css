@@ -120,7 +120,6 @@
         display: flex;
         flex-direction: column;
         align-items: center; /* Center vertically */
-        margin: 10px 0;
         padding: 20px;
     }
 
@@ -133,7 +132,7 @@
     
     .ab-search-bar[type="text"],
     .ab-select {
-        padding: 12px; /* Padding inside the input and select */
+        padding: 11px; /* Padding inside the input and select */
         margin: 10px 0;
         border: 1px solid #ccc; /* Border color */
         border-radius: 5px; /* Rounded corners */
