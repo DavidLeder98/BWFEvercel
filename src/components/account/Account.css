@@ -13,6 +13,11 @@
     padding: 10px;
 }
 
+.account-input-container{
+    display: flex;
+    flex-direction: column;
+}
+
 .account-input{
     padding: 8px;
     margin: 10px 0;

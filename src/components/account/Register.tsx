@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useAuth } from '../../services/account/AuthContext'; // Import useAuth hook
 import { useNavigate } from 'react-router-dom'; // To redirect after successful registration
 import './Account.css';
+import './AccBtn.css'
 
 const Register = () => {
   const { register, login } = useAuth(); // Destructure register and login functions from AuthContext
@@ -75,7 +76,9 @@ const Register = () => {
             className="account-input" 
           />
         </div>
-        <button type="submit">Register</button>
+        <div className="albc">
+          <button className="reg-btn" type="submit">Register</button>
+        </div>
       </form>
     </div>
   );

@@ -1,0 +1,14 @@
+.reg-btn{
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 12px 40px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: white;
+}
+
+.reg-btn:hover{
+    opacity: 0.8;
+}
