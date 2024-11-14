@@ -48,7 +48,7 @@ const Account: React.FC = () => {
   }, [message]);
 
   return (
-    <div className="account-component-container">
+    <div className="account-details-container">
       {showNotification && <AddNotification message={message} />} {/* Render notification if present */}
       <h1>Account Information</h1>
       {loading ? (

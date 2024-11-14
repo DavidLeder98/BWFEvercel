@@ -8,12 +8,22 @@
     padding: 20px;
 }
 
+.account-details-container{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .account-component-container h2{
     text-align: center;
     padding: 10px;
 }
 
-.account-component-container h1{
+.account-details-container h1{
     padding: 10px;
 }
 
@@ -56,6 +66,10 @@
     max-width: 1000px;
     padding: 20px;
     margin: 20px auto 40px auto;
+}
+
+.account-info{
+    margin-bottom: 20px;
 }
 
 .account-info p{
