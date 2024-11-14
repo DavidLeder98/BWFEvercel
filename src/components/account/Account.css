@@ -27,9 +27,9 @@
     padding: 20px;
 }
 
-.account-component-container h2{
+.account-component-container h2, .account-update-container h2{
     text-align: center;
-    padding: 10px;
+    padding: 10px 0;
 }
 
 .account-details-container h1{
