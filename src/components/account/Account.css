@@ -8,22 +8,12 @@
     padding: 20px;
 }
 
-.account-details-container{
-    width: 100%;
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 .account-component-container h2{
     text-align: center;
     padding: 10px;
 }
 
-.account-details-container h1{
+.account-component-container h1{
     padding: 10px;
 }
 
@@ -53,6 +43,13 @@
     margin: 20px auto;
     display: flex;
     justify-content: center;
+}
+
+.albc2{
+    width: 30%;
+    max-width: 100px;
+    margin: 20px auto;
+    display: flex;
 }
 
 .reg-link{

@@ -48,7 +48,7 @@ const Account: React.FC = () => {
   }, [message]);
 
   return (
-    <div className="account-details-container">
+    <div className="account-component-container">
       {showNotification && <AddNotification message={message} />} {/* Render notification if present */}
       <h1>Account Information</h1>
       {loading ? (
@@ -66,7 +66,9 @@ const Account: React.FC = () => {
           <p><strong>Zip Code:</strong> {userProfile?.zipCode}</p>
         </div>
       )}
-      <Link className="reg-btn" to="/account/update">Edit Details</Link>
+      <div className="albc2">
+        <Link className="reg-btn" to="/account/update">Edit Details</Link>
+      </div>
     </div>
   );
 };
