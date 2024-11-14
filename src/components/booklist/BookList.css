@@ -128,11 +128,12 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        width: 100%;
     }
     
     .ab-search-bar[type="text"],
     .ab-select {
-        padding: 10px; /* Padding inside the input and select */
+        padding: 12px; /* Padding inside the input and select */
         margin: 10px 0;
         border: 1px solid #ccc; /* Border color */
         border-radius: 5px; /* Rounded corners */
