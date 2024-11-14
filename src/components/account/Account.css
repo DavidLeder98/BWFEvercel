@@ -1,3 +1,22 @@
+.account-component-container{
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.account-input{
+    line-height: 1.1rem;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.account-input:focus{
+    border: 1px solid #007BFF;
+    box-shadow: 0 0 5px #007BFF;
+}
+
 .account-details-container{
     width: 100%;
     max-width: 1000px;

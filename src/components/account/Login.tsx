@@ -25,19 +25,21 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className="account-component-container">
       <h2>Login</h2>
       <input
         type="text"
         placeholder="Username"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
+        className="account-input"
       />
       <input
         type="password"
         placeholder="Password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
+        className="account-input"
       />
       <button onClick={handleLogin}>Login</button>
 

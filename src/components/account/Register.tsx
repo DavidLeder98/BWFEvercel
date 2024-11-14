@@ -31,44 +31,48 @@ const Register = () => {
   };
 
   return (
-    <div>
+    <div className="account-component-container">
       <h2>Register</h2>
       {error && <p style={{ color: 'red' }}>{error}</p>} {/* Display specific error messages */}
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className="account-input-container">
           <label>Username:</label>
           <input 
             type="text" 
             value={username} 
             onChange={(e) => setUsername(e.target.value)} 
             required 
+            className="account-input"
           />
         </div>
-        <div>
+        <div className="account-input-container">
           <label>Email:</label>
           <input 
             type="email" 
             value={email} 
             onChange={(e) => setEmail(e.target.value)} 
             required 
+            className="account-input"
           />
         </div>
-        <div>
+        <div className="account-input-container">
           <label>Password:</label>
           <input 
             type="password" 
             value={password} 
             onChange={(e) => setPassword(e.target.value)} 
-            required 
+            required
+            className="account-input" 
           />
         </div>
-        <div>
+        <div className="account-input-container">
           <label>Confirm Password:</label>
           <input 
             type="password" 
             value={confirmPassword} 
             onChange={(e) => setConfirmPassword(e.target.value)} 
-            required 
+            required
+            className="account-input" 
           />
         </div>
         <button type="submit">Register</button>
