@@ -61,7 +61,7 @@ const BookList = ({ initialSearchTag = '' }: BookListProps) => {
             <div className="all-books-container col">
                 <div className="ab-controlls">
                     <h1 className="ab-h1">All Books</h1>
-                    <div className="ab-search-container row">
+                    <div className="ab-search-container">
                         <input 
                             className="ab-search-bar"
                             type="text" 

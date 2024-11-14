@@ -123,6 +123,12 @@
         margin: 10px 0;
         padding: 20px;
     }
+
+    .ab-search-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
     
     .ab-search-bar[type="text"],
     .ab-select {
