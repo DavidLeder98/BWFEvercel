@@ -20,7 +20,7 @@ const BookDetailsPage: React.FC = () => {
         <div>
             <BookDetails bookId={bookId} />
             <Bundle id={1} />
-            <Bundle id={7} />
+            <Bundle id={1} />
         </div>
     );
 };

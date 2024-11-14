@@ -105,7 +105,7 @@ const BookDetails: React.FC<BookDetailsProps> = ({ bookId }) => {
     };
 
     return (
-        <div className="book-details-container row">
+        <div className="book-details-container">
             <div className="bd-left">
                 <div className="bd-image-container">
                     <img src={bookDetails.largeImageUrl} alt={bookDetails.title} className="bd-image" />
@@ -124,7 +124,7 @@ const BookDetails: React.FC<BookDetailsProps> = ({ bookId }) => {
                     </ul>
                 </div>
             </div>
-            <div className="bd-right col">
+            <div className="bd-right">
                 <div>
                     <h1 className="fw-400 allcaps bd-title">{bookDetails.title}</h1>
                     <h2 className="fw-400 bd-author">By: <Link to={`/author/${bookDetails.authorId}`}>{bookDetails.authorName}</Link></h2>
