@@ -1,6 +1,6 @@
 .account-component-container{
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,9 +13,9 @@
 }
 
 .account-input{
-    padding: 10px;
-    margin: 10px;
-    font-size: 1.1rem;
+    padding: 8px;
+    margin: 10px 0;
+    font-size: 1rem;
     border-radius: 5px;
     outline: none;
     border: 1px solid #ccc;
@@ -32,6 +32,11 @@
     margin: 10px auto;
     display: flex;
     justify-content: center;
+}
+
+.reg-link{
+    color: #007BFF;
+    text-decoration: underline;
 }
 
 .account-details-container{
