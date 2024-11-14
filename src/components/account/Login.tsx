@@ -43,10 +43,7 @@ const Login = () => {
         onChange={(e) => setPassword(e.target.value)}
         className="account-input"
       />
-      <Link to="/register" className="reg-link">
-       <p>Don't have an account?</p>
-       <p>Create one now!</p>
-      </Link>
+      <Link to="/register" className="reg-link">Don't have an account?</Link>
       <div className="albc">
         <Button text="Login" onClick={handleLogin} variant="filled" color="blue" />
       </div>
