@@ -120,19 +120,19 @@
         display: flex;
         flex-direction: column;
         align-items: center; /* Center vertically */
-        margin-bottom: 20px;
+        margin: 10px 0;
         padding: 20px;
     }
     
     .ab-search-bar[type="text"],
     .ab-select {
         padding: 8px; /* Padding inside the input and select */
+        margin: 10px 0;
         border: 1px solid #ccc; /* Border color */
         border-radius: 5px; /* Rounded corners */
         font-size: 1rem; /* Font size */
         transition: border-color 0.3s, box-shadow 0.3s; /* Transition for border color and shadow */
         width: 100%; /* Make them full width of their container */
-        max-width: 300px; /* Max width for input and select */
     }
     
     .ab-search-bar[type="text"]:focus,
