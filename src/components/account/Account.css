@@ -8,12 +8,21 @@
     padding: 20px;
 }
 
+.account-details-container{
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .account-component-container h2{
     text-align: center;
     padding: 10px;
 }
 
-.account-component-container h1{
+.account-details-container h1{
     padding: 10px;
 }
 
@@ -46,8 +55,8 @@
 }
 
 .albc2{
-    width: 30%;
-    max-width: 100px;
+    width: 100%;
+    max-width: 150px;
     margin: 20px auto;
     display: flex;
 }
@@ -56,13 +65,6 @@
     color: #007BFF;
     text-decoration: underline;
     margin: 8px 0 15px;
-}
-
-.account-details-container{
-    width: 100%;
-    max-width: 1000px;
-    padding: 20px;
-    margin: 20px auto 40px auto;
 }
 
 .account-info{
