@@ -271,16 +271,13 @@
     }
     
     .bd-left{
-        width: auto;
-        height: auto;
-        margin-right: 30px;
+        width: 100%;
     }
     
     .bd-right{
         display: flex;
         flex-direction: column;
-        width: auto;
-        height: auto;
+        width: 100%;
     }
     
     .bd-image-container{
