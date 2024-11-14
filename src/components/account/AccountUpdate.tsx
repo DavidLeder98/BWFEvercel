@@ -63,8 +63,8 @@ const AccountUpdate: React.FC = () => {
 
   return (
     <div className="account-details-container">
-      <h2>Update Account Information</h2>
       <form onSubmit={handleSubmit} className="account-component-container">
+        <h2>Update Account Information</h2>
         <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} placeholder="First Name" className="account-input" />
         <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} placeholder="Last Name" className="account-input" />
         <input type="text" name="telNumber" value={formData.telNumber} onChange={handleChange} placeholder="Phone Number" className="account-input" />
@@ -73,7 +73,7 @@ const AccountUpdate: React.FC = () => {
         <input type="text" name="state" value={formData.state} onChange={handleChange} placeholder="State" className="account-input" />
         <input type="text" name="zipCode" value={formData.zipCode} onChange={handleChange} placeholder="Zip Code" className="account-input" />
         {error && <p style={{ color: 'red' }}>{error}</p>}
-        <div className="albc2">
+        <div className="albc">
           <button className="reg-btn" type="submit">Update Details</button>
         </div>
       </form>
