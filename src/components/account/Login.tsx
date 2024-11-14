@@ -42,7 +42,9 @@ const Login = () => {
         onChange={(e) => setPassword(e.target.value)}
         className="account-input"
       />
-      <Button text="Login" onClick={handleLogin} variant="filled" color="blue" />
+      <div className="acc-login-button">
+        <Button text="Login" onClick={handleLogin} variant="filled" color="blue" />
+      </div>
 
       {/* Display error message if login fails */}
       {error && <p style={{ color: 'red' }}>{error}</p>}
