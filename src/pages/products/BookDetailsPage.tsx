@@ -12,11 +12,6 @@ const BookDetailsPage: React.FC = () => {
         window.scrollTo(0, 0); // Scroll to top whenever id changes
     }, [id]); // Trigger this effect every time the book ID changes
 
-    useEffect(() => {
-        document.documentElement.scrollTop = 0; // Scrolls to top for mobile
-        window.scrollTo(0, 0); // Fallback for other browsers
-    }, [id]);
-
     if (bookId === undefined) {
         return <Navigate to="/404" />; // Redirect to a 404 page if no valid ID is provided
     }
