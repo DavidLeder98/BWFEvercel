@@ -24,9 +24,9 @@ const Login = () => {
   };
 
   return (
-    <div className="account-component-container">
-      <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
+    <div>
+      <form onSubmit={handleSubmit} className="account-component-container">
+        <h2>Login</h2>
         <input
           type="text"
           placeholder="Username"
@@ -41,14 +41,13 @@ const Login = () => {
           onChange={(e) => setPassword(e.target.value)}
           className="account-input"
         />
+        {/* Display error message if login fails */}
+        {error && <p style={{ color: 'red' }}>{error}</p>}
         <Link to="/register" className="reg-link">Don't have an account?</Link>
         <div className="albc">
           <button className="reg-btn" type="submit">Login</button> {/* Submit button */}
         </div>
       </form>
-
-      {/* Display error message if login fails */}
-      {error && <p style={{ color: 'red' }}>{error}</p>}
     </div>
   );
 };
