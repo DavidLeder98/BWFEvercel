@@ -52,14 +52,17 @@
     .awb-bbya{
         display: flex;
         flex-direction: row;
+        align-items: baseline;
     }
 
     .awb-by{
         font-weight: 400;
+        font-size: 1.5rem;
     }
     
     .awb-name{
         text-transform: uppercase;
+        font-size: 1.7rem;
         margin-left: 10px;
     }
     
@@ -130,7 +133,6 @@
     .awb-bbya{
         display: flex;
         flex-direction: column;
-        align-items: baseline;
     }
 
     .awb-by{
