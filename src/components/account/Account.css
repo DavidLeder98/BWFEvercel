@@ -1,30 +1,67 @@
-.account-component-container{
-    width: 100%;
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 20px;
+@media (min-width: 901px){
+    .account-component-container{
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .account-update-container{
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 30px;
+        border: 2px solid #007BFF;
+        border-radius: 10px;
+    }
+    
+    .account-details-container{
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 30px;
+        border: 2px solid #007BFF;
+        border-radius: 10px;
+    }
 }
 
-.account-update-container{
-    width: 100%;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.account-details-container{
-    width: 100%;
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 20px;
+@media (max-width: 900px){
+    .account-component-container{
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .account-update-container{
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .account-details-container{
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 20px;
+    }
 }
 
 .account-component-container h2, .account-update-container h2{
