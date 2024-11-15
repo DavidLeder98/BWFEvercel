@@ -40,6 +40,7 @@ const CategoryWithBooks: React.FC<CategoryWithBooksProps> = ({ categoryId }) => 
         <div className="cwb-positioner">
             <div className="cwb-container col">
                 <div className="cwb-top">
+                    <h1 className="cwb-h2">{categoryName}</h1>
                     <h2 className="cwb-h2">{categoryName}</h2>
                     <select
                         className="cwb-select"

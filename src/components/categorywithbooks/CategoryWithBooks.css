@@ -50,8 +50,12 @@
         padding: 10px; /* Padding for options */
     }
     
-    .cwb-h2{
+    .cwb-h1{
         text-transform: uppercase;
+    }
+    
+    .cwb-h2{
+        display: none;
     }
 }
 
@@ -103,6 +107,10 @@
     
     .cwb-select option {
         padding: 10px; /* Padding for options */
+    }
+
+    .cwb-h1{
+        display: none;
     }
     
     .cwb-h2{
