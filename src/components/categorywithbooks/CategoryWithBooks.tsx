@@ -16,7 +16,7 @@ const showNotification = () => {
 
 const CategoryWithBooks: React.FC<CategoryWithBooksProps> = ({ categoryId }) => {
     const [books, setBooks] = useState<BookCardDto[]>([]);
-    const [sortBy, setSortBy] = useState<SortBy>(SortBy.Id);
+    const [sortBy, setSortBy] = useState<SortBy>(SortBy.Title);
     const [error, setError] = useState<string | null>(null);
     const [categoryName, setCategoryName] = useState<string>('');
 

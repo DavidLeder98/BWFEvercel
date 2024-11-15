@@ -16,7 +16,7 @@ const showNotification = () => {
 
 const AuthorWithBooks: React.FC<AuthorWithBooksProps> = ({ authorId }) => {
     const [books, setBooks] = useState<BookCardDto[]>([]);
-    const [sortBy, setSortBy] = useState<SortBy>(SortBy.Id);
+    const [sortBy, setSortBy] = useState<SortBy>(SortBy.Title);
     const [error, setError] = useState<string | null>(null);
     const [authorName, setAuthorName] = useState<string>('');
     const [authorDescription, setAuthorDescription] = useState<string>('');
