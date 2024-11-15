@@ -40,7 +40,7 @@ const CategoryWithBooks: React.FC<CategoryWithBooksProps> = ({ categoryId }) => 
         <div className="cwb-positioner">
             <div className="cwb-container col">
                 <div className="cwb-top">
-                    <h1>Books with category: <span className="cwb-h1">{categoryName}</span></h1>
+                    <h2>Books with category: <span className="cwb-h1">{categoryName}</span></h2>
                     <select
                         className="cwb-select"
                         value={sortBy}
