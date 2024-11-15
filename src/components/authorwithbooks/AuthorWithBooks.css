@@ -49,8 +49,19 @@
         padding: 10px; /* Padding for options */
     }
     
+    .awb-bbya{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .awb-by{
+        font-weight: 400;
+        font-size: 2rem;
+    }
+    
     .awb-name{
         text-transform: uppercase;
+        font-size: 2rem;
     }
     
     .awb-nc{
@@ -115,6 +126,15 @@
     
     .awb-select option {
         padding: 10px; /* Padding for options */
+    }
+
+    .awb-bbya{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .awb-by{
+        font-weight: 400;
     }
     
     .awb-name{
