@@ -39,8 +39,6 @@ const Footer = () => {
                             <li><Link to="/bestsellers">Best Sellers</Link></li>
                             <li><Link to="/deals">Deals & Coupons</Link></li>
                             <li><Link to="/allbooks">All Products</Link></li>
-                            <li><Link to="/allcategories">Categories</Link></li>
-                            <li><Link to="/authors">Authors</Link></li>
                         </ul>
                     </div>
                     <div className="f-section">
