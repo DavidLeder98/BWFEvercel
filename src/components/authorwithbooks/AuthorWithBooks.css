@@ -56,12 +56,13 @@
 
     .awb-by{
         font-weight: 400;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     
     .awb-name{
         text-transform: uppercase;
-        font-size: 2rem;
+        font-size: 1.7rem;
+        margin-left: 10px;
     }
     
     .awb-nc{
@@ -135,6 +136,7 @@
 
     .awb-by{
         font-weight: 400;
+        margin-bottom: 7px;
     }
     
     .awb-name{
