@@ -80,11 +80,11 @@
     
     .awb-list{
         display: grid;
-        grid-template-columns: repeat(auto-fill, 230px); /* Fixed column width */
-        grid-auto-rows: 400px; /* Ensures all cards have the same height */
+        grid-template-columns: repeat(auto-fill, 170px); /* Fixed column width */
+        grid-auto-rows: 350px; /* Ensures all cards have the same height */
         justify-content: center; /* Aligns the items to the start */
         overflow-x: auto; /* Allows horizontal scrolling if needed */
-        padding: 0 20px; /* Optional padding for the container */
+        padding: 0; /* Optional padding for the container */
     }
     
     .awb-top{
@@ -96,13 +96,13 @@
     }
     
     .awb-select{
-        padding: 10px 15px; /* Padding inside the input and select */
+        margin: 20px 0 10px 0;
+        padding: 10px; /* Padding inside the input and select */
         border: 1px solid #ccc; /* Border color */
         border-radius: 5px; /* Rounded corners */
-        font-size: 16px; /* Font size */
+        font-size: 1rem; /* Font size */
         transition: border-color 0.3s, box-shadow 0.3s; /* Transition for border color and shadow */
         width: 100%; /* Make them full width of their container */
-        max-width: 300px; /* Max width for input and select */
         background-color: #fff; /* Background color */
         cursor: pointer; /* Change cursor to pointer */
     }

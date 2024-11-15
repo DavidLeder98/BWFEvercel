@@ -49,7 +49,7 @@ const AuthorWithBooks: React.FC<AuthorWithBooksProps> = ({ authorId }) => {
                         </div>
                     </div>
                 <div className="awb-top">
-                    <h2>Books By: <span className="awb-name">{authorName}</span></h2>
+                    <h3>Books By: <span className="awb-name">{authorName}</span></h3>
                     <select
                         className="awb-select"
                         value={sortBy}
