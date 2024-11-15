@@ -44,6 +44,12 @@
         border-color: #007BFF; /* Change border color on focus */
         box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a shadow effect on focus */
     }
+
+    .ab-search-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
     
     .ab-search-bar[type="text"]::placeholder {
         color: #aaa; /* Placeholder color */
