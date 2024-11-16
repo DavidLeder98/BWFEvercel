@@ -110,8 +110,8 @@ const CartListUser = () => {
                             <div className="cl-tap">
                                 <div className="cl-title">{book.title}</div>
                                 <div className="cl-author">By {book.authorName}</div>
-                                <div>List Price: ${book.listPrice.toFixed(2)}</div>
-                                <div>Price: ${book.price.toFixed(2)}</div>
+                                <div className="cl-list-price">List Price: ${book.listPrice.toFixed(2)}</div>
+                                <div className="cl-price">Price: ${book.price.toFixed(2)}</div>
                             </div>
                         </div>
                         <div className="cl-bit">

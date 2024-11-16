@@ -163,7 +163,6 @@
     .cl-img{
         height: 100px;
         width: 75px;
-        margin: 5px 20px;
     }
     
     .cl-title{
@@ -176,6 +175,12 @@
     
     .cl-price{
         color: rgb(189, 8, 8);
+    }
+
+    .cl-bit{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
     
     .cl-total{
