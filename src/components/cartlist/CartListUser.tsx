@@ -104,17 +104,20 @@ const CartListUser = () => {
             {localBooksInCart.map(book => {
                 const quantity = getQuantity(book.id);
                 return (
-                    <div className="cl-row" key={book.id}>
-                        <div className="cl-item">
+                    <div className="cl-bot" key={book.id}>
+                        <div className="cl-itap">
                             <img className="cl-img" src={book.imageUrl} alt={book.title} />
-                            <div>
+                            <div className="cl-tap">
                                 <div className="cl-title">{book.title}</div>
                                 <div className="cl-author">By {book.authorName}</div>
+                                <div>List Price: ${book.listPrice.toFixed(2)}</div>
+                                <div>Price: ${book.price.toFixed(2)}</div>
                             </div>
                         </div>
-                        <div className="cl-details">
-                            <div>List Price: ${book.listPrice.toFixed(2)}</div>
-                            <div>Price: ${book.price.toFixed(2)}</div>
+                        <div className="cl-bit">
+                            <button className="cl-remove" onClick={() => handleRemove(book.id)}>
+                                <p><b>X </b> Remove</p>
+                            </button>
                             <div>
                                 Quantity:
                                 <input
@@ -127,9 +130,6 @@ const CartListUser = () => {
                             </div>
                             <div>Total: ${(book.price * quantity).toFixed(2)}</div>
                         </div>
-                        <button className="cl-remove" onClick={() => handleRemove(book.id)}>
-                            <b>X </b> Remove
-                        </button>
                     </div>
                 );
             })}

@@ -134,7 +134,7 @@
         padding: 20px;
         text-align: center;
     }
-    
+
     .cl-empty{
         margin: 20px auto;
     }
@@ -145,20 +145,19 @@
         margin: 10px 0;
     }
 
-    .cl-top{
-        display: none;
+    .cl-bot{
+        display: flex;
+        flex-direction: column;
     }
-    
-    .cl-bot:hover{
-        background-color: #dddddd;
+
+    .cl-itap{
+        display: flex;
+        flex-direction: row;
     }
-    
-    .cl-top th{
-        text-align: left;
-    }
-    
-    .cl-top th{
-        padding: 10px 0;
+
+    .cl-tap{
+        display: flex;
+        flex-direction: column;
     }
     
     .cl-img{
