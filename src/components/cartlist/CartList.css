@@ -114,14 +114,6 @@
     .purchase-btn:hover {
         opacity: 0.8;
     }
-    
-    .purchase-btn:hover img {
-        /* filter: invert(0); Remove the inversion on hover to show original color */
-    }
-    
-    .purchase-btn:hover p {
-        color: #000000; /* Change text color on hover */
-    }
 }
 
 @media (max-width: 900px){
@@ -256,13 +248,5 @@
     
     .purchase-btn:hover {
         background-color: #ffffff;
-    }
-    
-    .purchase-btn:hover img {
-        filter: invert(0); /* Remove the inversion on hover to show original color */
-    }
-    
-    .purchase-btn:hover p {
-        color: #000000; /* Change text color on hover */
     }
 }
