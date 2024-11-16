@@ -87,8 +87,8 @@
     }
     
     .purchase-btn {
-        background-color: #017c4d;
-        border: 3px solid #017c4d;
+        background-color: #165366;
+        border: 3px solid #165366;
         padding: 10px 30px;
         display: flex;
         flex-direction: row;
@@ -112,11 +112,11 @@
     }
     
     .purchase-btn:hover {
-        background-color: #ffffff;
+        opacity: 0.8;
     }
     
     .purchase-btn:hover img {
-        filter: invert(0); /* Remove the inversion on hover to show original color */
+        /* filter: invert(0); Remove the inversion on hover to show original color */
     }
     
     .purchase-btn:hover p {
