@@ -47,7 +47,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         line-height: 1.2em; /* Adjust line height for readability */
-        height: calc(1.2em * 2); /* Ensures title height stays fixed */
+        /*height: calc(1.2em * 2); /* Ensures title height stays fixed */
     }
     
     .card-author{
@@ -63,7 +63,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         line-height: 1.2em;
-        height: calc(1.2em * 1); /* Ensures author height stays fixed */
+        /* height: calc(1.2em * 1); /* Ensures author height stays fixed */
     }
     
     .best-seller-container{
@@ -139,12 +139,12 @@
         font-size: 0.9rem;
     
         display: -webkit-box;
-        -webkit-line-clamp: 1; /* Limit to 3 lines */
+        -webkit-line-clamp: 2; /* Limit to 3 lines */
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
         line-height: 1.2em; /* Adjust line height for readability */
-        height: calc(1.2em * 1); /* Ensures title height stays fixed */
+        /*height: calc(1.2em * 1); /* Ensures title height stays fixed */
     }
     
     .card-author{
@@ -155,12 +155,12 @@
         font-size: 0.9rem;
     
         display: -webkit-box;
-        -webkit-line-clamp: 2; /* Limit to 2 lines for author */
+        -webkit-line-clamp: 1; /* Limit to 2 lines for author */
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
         line-height: 1.2em;
-        height: calc(1.2em * 2); /* Ensures author height stays fixed */
+        /*height: calc(1.2em * 1); /* Ensures author height stays fixed */
     }
     
     .best-seller-container{
