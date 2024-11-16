@@ -115,9 +115,6 @@ const CartListUser = () => {
                             </div>
                         </div>
                         <div className="cl-bit">
-                            <button className="cl-remove" onClick={() => handleRemove(book.id)}>
-                                <p><b>X </b> Remove</p>
-                            </button>
                             <div>
                                 Quantity:
                                 <input
@@ -129,6 +126,9 @@ const CartListUser = () => {
                                 />
                             </div>
                             <div>Total: ${(book.price * quantity).toFixed(2)}</div>
+                            <button className="cl-remove" onClick={() => handleRemove(book.id)}>
+                                <p><b>X </b> Remove</p>
+                            </button>
                         </div>
                     </div>
                 );
