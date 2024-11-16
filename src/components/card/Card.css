@@ -47,7 +47,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         line-height: 1.2em; /* Adjust line height for readability */
-        /*height: calc(1.2em * 2); /* Ensures title height stays fixed */
+        height: calc(1.2em * 2); /* Ensures title height stays fixed */
     }
     
     .card-author{
@@ -63,7 +63,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         line-height: 1.2em;
-        /* height: calc(1.2em * 1); /* Ensures author height stays fixed */
+        height: calc(1.2em * 1); /* Ensures author height stays fixed */
     }
     
     .best-seller-container{
@@ -144,7 +144,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         line-height: 1.2em; /* Adjust line height for readability */
-        /*height: calc(1.2em * 1); /* Ensures title height stays fixed */
+        height: calc(1.2em * 2); /* Ensures title height stays fixed */
     }
     
     .card-author{
@@ -160,7 +160,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         line-height: 1.2em;
-        /*height: calc(1.2em * 1); /* Ensures author height stays fixed */
+        height: calc(1.2em * 1); /* Ensures author height stays fixed */
     }
     
     .best-seller-container{
