@@ -139,12 +139,12 @@
         font-size: 0.9rem;
     
         display: -webkit-box;
-        -webkit-line-clamp: 2; /* Limit to 3 lines */
+        -webkit-line-clamp: 1; /* Limit to 3 lines */
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
         line-height: 1.2em; /* Adjust line height for readability */
-        height: calc(1.2em * 2); /* Ensures title height stays fixed */
+        height: calc(1.2em * 1); /* Ensures title height stays fixed */
     }
     
     .card-author{
@@ -181,7 +181,7 @@
     
     .card-price{
         padding: 0 10px;
-        color: #dc3545;
+        color: #000;
         font-size: 1rem;
     }
     
