@@ -133,7 +133,7 @@ const CartListUser = () => {
                     </div>
                 );
             })}
-            <div className="cl-summary">
+            <div className="cl-sum">
                 <div>Sum Total: ${totalPrice}</div>
             </div>
         </div>

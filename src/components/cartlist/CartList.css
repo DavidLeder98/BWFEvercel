@@ -142,17 +142,19 @@
     .cl-table{
         padding: 20px;
         border-collapse: collapse;
-        margin: 10px 0;
+        margin: 0 0 10px 0;
     }
 
     .cl-bot{
         display: flex;
         flex-direction: column;
+        margin: 0 0 20px 0;
     }
 
     .cl-itap{
         display: flex;
         flex-direction: row;
+        margin: 0 0 10px 0;
     }
 
     .cl-tap{
@@ -163,10 +165,15 @@
     .cl-img{
         height: 100px;
         width: 75px;
+        margin: 0 10px 0 0;
     }
     
     .cl-title{
         text-transform: uppercase;
+    }
+
+    .cl-author{
+        margin: 0 0 10px 0;
     }
     
     .cl-list-price{
@@ -209,7 +216,7 @@
     
     .cl-sum{
         font-size: 1.4rem;
-        padding: 20px 0;
+        padding: 10px;
         font-weight: 800;
     }
     
