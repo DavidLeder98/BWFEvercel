@@ -72,7 +72,7 @@ const Bundle: React.FC<BundleProps> = ({ id }) => {
         infinite: true,
         speed: 500,
         slidesToShow: 6,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         prevArrow: <PrevArrow />, 
         nextArrow: <NextArrow />, 
         responsive: [
@@ -80,7 +80,7 @@ const Bundle: React.FC<BundleProps> = ({ id }) => {
                 breakpoint: 1600,
                 settings: {
                     slidesToShow: 5,
-                    slidesToScroll: 2,
+                    slidesToScroll: 1,
                 },
             },
             {
