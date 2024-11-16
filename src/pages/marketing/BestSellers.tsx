@@ -12,9 +12,9 @@ const BestSellers = () => {
     return (
         <div>
             <DealsBanner />
-            <Bundle id={1} />
-            <Bundle id={1} />
-            <Bundle id={1} />
+            <Bundle id={9} />
+            <Bundle id={8} />
+            <Bundle id={10} />
             <PageEnd />
         </div>
     );

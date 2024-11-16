@@ -12,10 +12,10 @@ const Deals = () => {
     return (
         <div>
             <AuthorsBanner />
-            <Bundle id={1} />
-            <Bundle id={1} />
-            <Bundle id={1} />
-            <Bundle id={1} />
+            <Bundle id={2} />
+            <Bundle id={6} />
+            <Bundle id={4} />
+            <Bundle id={3} />
             <PageEnd />
         </div>
     );

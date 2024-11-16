@@ -14,13 +14,13 @@ const Home = () => {
         <div>
             <Hero />
             <Bundle id={1} />
-            <Bundle id={1} />
+            <Bundle id={2} />
             <DealsBanner />
-            <Bundle id={1} />
-            <Bundle id={1} />
+            <Bundle id={7} />
+            <Bundle id={4} />
             <AuthorsBanner />
-            <Bundle id={1} />
-            <Bundle id={1} />
+            <Bundle id={8} />
+            <Bundle id={3} />
             <BtnProducts />
         </div>
     );
