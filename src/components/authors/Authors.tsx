@@ -53,11 +53,11 @@ const Authors: React.FC = () => {
             </div>
             <ul className="aa-ul">
                 {filteredAuthors.map((author) => (
-                    <Link to={`/author/${author.id}`} key={author.id}>
                         <div className="aa-li-container">
-                            <li className="aa-li">{author.name}</li>
+                            <Link to={`/author/${author.id}`} key={author.id}>
+                                <li className="aa-li">{author.name}</li>
+                            </Link>
                         </div>
-                    </Link>
                 ))}
             </ul>
             <PageEnd />
