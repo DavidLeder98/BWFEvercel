@@ -110,7 +110,7 @@ const BookDetails: React.FC<BookDetailsProps> = ({ bookId }) => {
                 <div className="bd-image-container">
                     <img src={bookDetails.largeImageUrl} alt={bookDetails.title} className="bd-image" />
                     {bookDetails.bestSeller && (
-                        <h2 className="bd-best-seller"><Link to={`/bestsellers/`}>BEST SELLER!</Link></h2>
+                        <h2 className="bd-best-seller"><Link to={`/bestsellers/`}>BEST SELLER</Link></h2>
                     )}
                 </div>
                 <div className="bd-categories col">

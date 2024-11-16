@@ -93,10 +93,6 @@
         margin-bottom: 10px;
     }
     
-    .bd-price-container{
-        margin-top: 35px;
-    }
-    
     .bd-listprice, .bd-price{
         margin-bottom: 20px;
     }
@@ -223,10 +219,6 @@
     
     .bd-description h3{
         margin-bottom: 10px;
-    }
-    
-    .bd-price-container{
-        margin-top: 35px;
     }
     
     .bd-listprice, .bd-price{
@@ -364,10 +356,6 @@
     
     .bd-description h3{
         margin-bottom: 10px;
-    }
-    
-    .bd-price-container{
-        margin-top: auto;
     }
     
     .bd-listprice, .bd-price{
