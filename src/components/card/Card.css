@@ -58,7 +58,7 @@
         font-size: 0.9rem;
     
         display: -webkit-box;
-        -webkit-line-clamp: 2; /* Limit to 2 lines for author */
+        -webkit-line-clamp: 1; /* Limit to 2 lines for author */
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -85,7 +85,7 @@
     
     .card-price{
         padding: 0 10px;
-        color: #dc3545;
+        color: #000;
     }
     
     .card-list-price{
