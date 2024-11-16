@@ -62,13 +62,15 @@ const CartListUser = () => {
                             const quantity = getQuantity(book.id);
                             return (
                                 <tr className="cl-bot" key={book.id}>
-                                    <td>
-                                        <img className="cl-img" src={book.imageUrl} alt={book.title} />
-                                    </td>
-                                    <td>
-                                        <div className="cl-title">{book.title}</div>
-                                        <div className="cl-author">By {book.authorName}</div>
-                                    </td>
+                                    <div className="cl-md-top">
+                                        <td>
+                                            <img className="cl-img" src={book.imageUrl} alt={book.title} />
+                                        </td>
+                                        <td>
+                                            <div className="cl-title">{book.title}</div>
+                                            <div className="cl-author">By {book.authorName}</div>
+                                        </td>
+                                    </div>
                                     <td className="cl-list-price">${book.listPrice.toFixed(2)}</td>
                                     <td className="cl-price">${book.price.toFixed(2)}</td>
                                     <td>
