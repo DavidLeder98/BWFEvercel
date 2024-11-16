@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import AuthorWithBooks from "../../components/authorwithbooks/AuthorWithBooks";
 import { useEffect } from 'react';
-import PageEnd from "../../components/pageend/PageEnd";
+import BtnHome from "../../components/pageend/BtnHome";
 
 const AuthorPage = () => {
     useEffect(() => {
@@ -20,7 +20,7 @@ const AuthorPage = () => {
     return (
         <>
             <AuthorWithBooks authorId={authorId} />
-            <PageEnd />
+            <BtnHome />
         </>
     );
 };

@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import CategoryWithBooks from "../../components/categorywithbooks/CategoryWithBooks";
 import { useEffect } from 'react';
-import PageEnd from "../../components/pageend/PageEnd";
+import BtnHome from "../../components/pageend/BtnHome";
 
 const CategoryPage = () => {
     useEffect(() => {
@@ -20,7 +20,7 @@ const CategoryPage = () => {
     return (
         <>
             <CategoryWithBooks categoryId={categoryId} />
-            <PageEnd />
+            <BtnHome />
         </>
     );
 };
