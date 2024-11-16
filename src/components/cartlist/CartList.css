@@ -43,6 +43,7 @@
     }
     
     .cl-list-price{
+        color: #777;
         text-decoration: line-through;
     }
     
@@ -87,8 +88,8 @@
     }
     
     .purchase-btn {
-        background-color: #165366;
-        border: 3px solid #165366;
+        background-color: #017c4d;
+        border: 3px solid #017c4d;
         padding: 10px 30px;
         display: flex;
         flex-direction: row;
@@ -170,7 +171,7 @@
     
     .cl-list-price{
         text-decoration: line-through;
-        color: #555;
+        color: #777;
     }
     
     .cl-price{

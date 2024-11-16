@@ -29,7 +29,7 @@
     
     .search-icon-container{
         height: 38px;
-        background-color: #165366;
+        background-color: #ce5200;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -102,7 +102,7 @@
     .search-icon-container{
         height: 32px;
         width: 32px;
-        background-color: #165366;
+        background-color: #ce5200;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -176,7 +176,7 @@
     .search-icon-container{
         height: 32px;
         width: 32px;
-        background-color: #165366;
+        background-color: #ce5200;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -259,7 +259,7 @@
     }
     
     .search-icon-container:hover{
-        background-color: #e97c00;
+        opacity: 0.8;
         cursor: pointer;
     }
     
