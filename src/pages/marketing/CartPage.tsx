@@ -3,6 +3,7 @@ import CartListGuest from "../../components/cartlist/CartListGuest";
 import CartListUser from "../../components/cartlist/CartListUser";
 import { useCartUser } from "../../services/cart/CartContextUser";
 import { useAuth } from "../../services/account/AuthContext"; // Import the auth context
+import PageEnd from "../../components/pageend/PageEnd";
 
 const CartPage = () => {
     const { fetchBooksInCart } = useCartUser();
@@ -19,6 +20,7 @@ const CartPage = () => {
             ) : (
                 <CartListGuest /> // Render this if user is not logged in
             )}
+            <PageEnd />
         </>
     );
 };

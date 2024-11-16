@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import CategoryWithBooks from "../../components/categorywithbooks/CategoryWithBooks";
 import { useEffect } from 'react';
+import PageEnd from "../../components/pageend/PageEnd";
 
 const CategoryPage = () => {
     useEffect(() => {
@@ -17,7 +18,10 @@ const CategoryPage = () => {
     }
 
     return (
-        <CategoryWithBooks categoryId={categoryId} />
+        <>
+            <CategoryWithBooks categoryId={categoryId} />
+            <PageEnd />
+        </>
     );
 };
 

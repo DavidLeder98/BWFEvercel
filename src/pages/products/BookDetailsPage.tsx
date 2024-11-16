@@ -3,6 +3,7 @@ import BookDetails from "../../components/bookdetails/BookDetails";
 import { Navigate } from "react-router-dom";
 import Bundle from "../../components/bundle/Bundle";
 import { useEffect } from 'react';
+import PageEnd from "../../components/pageend/PageEnd";
 
 const BookDetailsPage: React.FC = () => {
     const { id } = useParams<{ id: string }>(); // Use the useParams hook to get the book ID
@@ -20,7 +21,8 @@ const BookDetailsPage: React.FC = () => {
         <div>
             <BookDetails bookId={bookId} />
             <Bundle id={1} />
-            <Bundle id={1} />
+            <Bundle id={2} />
+            <PageEnd />
         </div>
     );
 };
