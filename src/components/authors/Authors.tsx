@@ -41,7 +41,7 @@ const Authors: React.FC = () => {
 
     return (
         <div className="all-authors-container">
-            <div className="aa-top row">
+            <div className="aa-top">
                 <h1 className="aa-h1">All Authors</h1>
                 <input 
                     className="aa-search-bar"
