@@ -14,6 +14,7 @@
         width: 100%;
         height: auto;
         cursor: pointer;
+        margin: 0 0 20px 0;
     }
     
     .static-img-s{
@@ -30,5 +31,6 @@
         width: 100%;
         height: auto;
         cursor: pointer;
+        margin: 0 0 20px 0;
     }
 }
