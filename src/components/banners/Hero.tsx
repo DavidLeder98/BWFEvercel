@@ -1,5 +1,5 @@
 import './Banner.css';
-import hero from '../../assets/banners/hero.png';
+import hero from '../../assets/banners/herogreen.png';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
