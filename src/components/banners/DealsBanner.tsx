@@ -6,7 +6,7 @@ const DealsBanner = () => {
     return (
         <div className="banner-container">
             <Link to="/deals">
-                <img className="static-img" src={spook} />
+                <img className="static-img-l" src={spook} />
             </Link>
         </div>
     )

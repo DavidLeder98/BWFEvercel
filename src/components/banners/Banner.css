@@ -9,8 +9,26 @@
     margin: 0 auto -5px auto;
 }
 
-.static-img{
-    width: 100%;
-    height: auto;
-    cursor: pointer;
+@media (min-width: 901px){
+    .static-img-l{
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+    
+    .static-img-s{
+        display: none;
+    }
+}
+
+@media (max-width: 900px){
+    .static-img-l{
+        display: none;
+    }
+    
+    .static-img-s{
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
 }

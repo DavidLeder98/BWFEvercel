@@ -6,7 +6,7 @@ const AuthorsBanner = () => {
     return (
         <div className="banner-container">
             <Link to="/bestsellers">
-                <img className="static-img" src={authorsbanner} />
+                <img className="static-img-l" src={authorsbanner} />
             </Link>
         </div>
     )
