@@ -54,7 +54,7 @@ const NavMobile = () => {
         const handleClickOutside = (event: MouseEvent) => {
             const target = event.target as Node;
 
-            // Handle menu close
+            // Handles menu close
             if (
                 menuRef.current &&
                 !menuRef.current.contains(target) &&
@@ -64,7 +64,7 @@ const NavMobile = () => {
                 setMenuOpen(false);
             }
 
-            // Handle categories dropdown close, excluding menu links
+            // Handles categories dropdown close, excluding menu links
             if (
                 dropdownRef.current &&
                 !dropdownRef.current.contains(target) &&

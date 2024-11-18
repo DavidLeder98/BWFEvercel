@@ -1,4 +1,3 @@
-/* Base button styles */
 .button {
     padding: 10px 20px;
     border-radius: 5px;
@@ -7,13 +6,11 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Disabled button */
 .button:disabled {
     cursor: not-allowed;
     opacity: 0.6;
 }
 
-/* Filled variant */
 .button.filled {
     color: white;
     border: none;
@@ -23,13 +20,11 @@
     opacity: 0.8;
 }
 
-/* Outlined variant */
 .button.outlined {
     background-color: transparent;
     border: 2px solid;
 }
 
-/* Color styles */
 .button.blue {
     background-color: #007bff;
     border-color: #007bff;

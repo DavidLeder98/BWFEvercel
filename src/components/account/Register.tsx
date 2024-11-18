@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import { useAuth } from '../../services/account/AuthContext'; // Import useAuth hook
-import { useNavigate } from 'react-router-dom'; // To redirect after successful registration
+import { useAuth } from '../../services/account/AuthContext';
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import './Account.css';
 import './AccBtn.css'
 
 const Register = () => {
-  const { register, login } = useAuth(); // Destructure register and login functions from AuthContext
-  const [username, setUsername] = useState(''); // State for username
-  const [email, setEmail] = useState(''); // State for email
-  const [password, setPassword] = useState(''); // State for password
-  const [confirmPassword, setConfirmPassword] = useState(''); // State for confirm password
-  const [error, setError] = useState<string | null>(null); // To handle error messages
-  const navigate = useNavigate(); // To navigate after successful registration
+  const { register, login } = useAuth();
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [error, setError] = useState<string | null>(null);
+  const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault(); // Prevent default form submission
@@ -24,11 +24,11 @@ const Register = () => {
     }
 
     try {
-      await register(username, email, password); // Call the register function
-      await login(username, password); // Automatically log in the user after successful registration
-      navigate('/account'); // Redirect to homepage or any other route after registration and login
+      await register(username, email, password); // Calls the register function
+      await login(username, password); // Automatically logs in the user after successful registration
+      navigate('/account');
     } catch (err) {
-      setError((err as Error).message); // Handle error with specific message
+      setError((err as Error).message);
     }
   };
 
@@ -76,7 +76,7 @@ const Register = () => {
             className="account-input" 
           />
         </div>
-        {error && <p style={{ color: 'red' }}>{error}</p>} {/* Display specific error messages */}
+        {error && <p style={{ color: 'red' }}>{error}</p>}
         <Link to="/login" className="reg-link">Already have an account?</Link>
         <div className="albc">
           <button className="reg-btn" type="submit">Register</button>

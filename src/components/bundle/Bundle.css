@@ -11,50 +11,45 @@
     }
     
     .slick-slider {
-        position: relative; /* Ensure correct positioning for the slider */
+        position: relative; /* Ensures correct positioning for the slider */
     }
     
-    /* Set height for the slider to avoid deformation */
     .slick-slide {
-        display: flex; /* Ensure proper alignment of cards */
-        justify-content: center; /* Center cards within the slide */
-        align-items: flex-start; /* Align cards at the start to avoid stretching */
-        padding: 0 10px; /* Space between slides */
-        height: 400px; /* Set a fixed height to prevent deformation */
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 10px;
+        height: 400px;
     }
     
-    /* Card styles */
     .card {
-        width: 220px; /* Set card width */
-        height: 380px; /* Make height responsive to parent container */
-        transition: transform 0.3s ease; /* Add transition for hover effect */
-        display: flex; /* Flex to enable alignment */
-        flex-direction: column; /* Arrange card content vertically */
-        overflow: hidden; /* Prevent content overflow */
+        width: 220px;
+        height: 380px;
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
     }
     
-    /* Hover effect for cards */
     .card:hover {
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        z-index: 1; /* Bring hovered card to the front */
+        z-index: 1;
     }
     
-    /* Arrow buttons styling */
     .slick-prev, .slick-next {
-        z-index: 100; /* Ensure arrows are above slides */
+        z-index: 100;
         top: 30%;
         transition: transform 0.3s ease;
     }
     
     .slick-prev {
-        left: -90px; /* Position left arrow */
+        left: -90px;
     }
     
     .slick-next {
-        right: -10px; /* Position right arrow */
+        right: -10px;
     }
     
-    /* Optional: Add hover effect for arrows */
     .slick-prev:hover, .slick-next:hover {
         transform: scale(1.1);
     }
@@ -109,24 +104,22 @@
     }
     
     .slick-slider {
-        position: relative; /* Ensure correct positioning for the slider */
+        position: relative;
     }
     
-    /* Set height for the slider to avoid deformation */
     .slick-slide {
-        display: flex; /* Ensure proper alignment of cards */
-        justify-content: center; /* Center cards within the slide */
-        align-items: flex-start; /* Align cards at the start to avoid stretching */
-        padding: 0 10px; /* Space between slides */
-        height: 350px; /* Set a fixed height to prevent deformation */
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 10px;
+        height: 350px;
     }
     
-    /* Card styles */
     .card {
-        width: 180px; /* Set card width */
-        height: 330px; /* Make height responsive to parent container */
-        display: flex; /* Flex to enable alignment */
-        flex-direction: column; /* Arrange card content vertically */
-        overflow: hidden; /* Prevent content overflow */
+        width: 180px;
+        height: 330px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
     }
 }

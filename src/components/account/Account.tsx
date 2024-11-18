@@ -11,15 +11,15 @@ const Account: React.FC = () => {
   const [userProfile, setUserProfile] = useState<any>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const location = useLocation();
-  const message = location.state?.message; // Retrieve the message from location state
+  const message = location.state?.message; // Retrieves the message from location state
   const [showNotification, setShowNotification] = useState<boolean>(false);
 
-  // Fetch user profile when component loads
+  // Fetches user profile when component loads
   useEffect(() => {
     const fetchUserProfile = async () => {
       try {
         if (isAuthenticated && username) {
-          const profileData = await getUserProfile(username); // Pass username here
+          const profileData = await getUserProfile(username); // Passes username here
           setUserProfile(profileData);
         }
       } catch (error) {
@@ -41,15 +41,15 @@ const Account: React.FC = () => {
       setShowNotification(true);
       const timer = setTimeout(() => {
         setShowNotification(false);
-      }, 3000); // Set timer for 3000 ms (3 seconds)
+      }, 3000); // Sets timer for 3000 ms (3 seconds)
 
-      return () => clearTimeout(timer); // Clean up the timer on unmount
+      return () => clearTimeout(timer); // Cleans up the timer on unmount
     }
   }, [message]);
 
   return (
     <div className="account-details-container">
-      {showNotification && <AddNotification message={message} />} {/* Render notification if present */}
+      {showNotification && <AddNotification message={message} />}
       {loading ? (
         <p>Loading user profile...</p>
       ) : (

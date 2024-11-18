@@ -9,7 +9,7 @@ const Authors: React.FC = () => {
     const [authors, setAuthors] = useState<AuthorListDto[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
-    const [searchTerm, setSearchTerm] = useState<string>(''); // State for search term
+    const [searchTerm, setSearchTerm] = useState<string>('');
 
     useEffect(() => {
         const fetchAuthors = async () => {
@@ -34,7 +34,7 @@ const Authors: React.FC = () => {
         return <div>{error}</div>;
     }
 
-    // Filter authors based on the search term
+    // Filters authors based on the search term
     const filteredAuthors = authors.filter((author) =>
         author.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
@@ -48,7 +48,7 @@ const Authors: React.FC = () => {
                     type="text" 
                     placeholder="Quick-search authors..."
                     value={searchTerm} // Controlled input
-                    onChange={(e) => setSearchTerm(e.target.value)} // Update search term
+                    onChange={(e) => setSearchTerm(e.target.value)} // Updates search term
                 />
             </div>
             <ul className="aa-ul">

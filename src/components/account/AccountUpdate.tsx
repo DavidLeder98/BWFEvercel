@@ -53,7 +53,6 @@ const AccountUpdate: React.FC = () => {
     
     try {
       await updateUserProfile(username, formData);
-      // Redirect to /account with a success message
       navigate('/account', { state: { message: 'Profile updated successfully!' } }); 
     } catch (err) {
       const errorMessage = (err as Error).message || 'An error occurred';

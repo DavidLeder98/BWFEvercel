@@ -17,7 +17,7 @@ const Login = () => {
     try {
       setError(null);
       await login(username, password);
-      navigate('/account'); // Redirect to home page or protected page
+      navigate('/account'); // Redirects to home page or protected page
     } catch (err) {
       setError('Invalid login credentials');
     }
@@ -41,11 +41,10 @@ const Login = () => {
           onChange={(e) => setPassword(e.target.value)}
           className="account-input"
         />
-        {/* Display error message if login fails */}
         {error && <p style={{ color: 'red' }}>{error}</p>}
         <Link to="/register" className="reg-link">Don't have an account?</Link>
         <div className="albc">
-          <button className="reg-btn" type="submit">Login</button> {/* Submit button */}
+          <button className="reg-btn" type="submit">Login</button>
         </div>
       </form>
     </div>

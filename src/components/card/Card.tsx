@@ -24,7 +24,6 @@ const Card = ({ book, showNotification }: ItemProps) => {
     const handleAddToCart = () => {
         const cartItemId = book.id;
     
-        // Define a type for the cart items (adjust based on your actual item structure)
         interface CartItem {
             id: number;
             title: string;
@@ -44,8 +43,8 @@ const Card = ({ book, showNotification }: ItemProps) => {
         const isInGuestCart = !username && guestCart.some((item: CartItem) => item.id === cartItemId);
     
         if (isInUserCart || isInGuestCart) {
-            console.log('This book is already in your cart.'); // Provide feedback to the user
-            return; // Exit early if the item is already in the cart
+            console.log('This book is already in your cart.'); // Provides feedback to the user
+            return; // Exits early if the item is already in the cart
         }
     
         const cartItem: CartItem = {

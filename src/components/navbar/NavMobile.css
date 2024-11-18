@@ -91,36 +91,34 @@
 
     .mobile-menu {
         position: absolute;
-        top: 100%; /* Position the menu just below the navbar */
+        top: 100%;
         left: 0;
         width: 500px;
         padding: 10px 0;
-        background-color: #fff; /* Set a background color */
-        z-index: 1000; /* High z-index to appear over other elements */
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: shadow for a layered effect */
+        background-color: #fff;
+        z-index: 1000;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         transform: translateY(-100%);
         opacity: 0;
-        pointer-events: none; /* Initially hidden */
+        pointer-events: none;
     }
     
     .mobile-menu.open {
         transform: translateY(0);
         opacity: 1;
-        pointer-events: auto; /* Allow interaction when menu is open */
+        pointer-events: auto;
     }
     
-    /* Visible when open */
     .mobile-menu.open {
         display: block;
-        /* Styles for open state, such as animations */
     }
 
     .mn-cdd {
-        display: none; /* Hidden by default */
+        display: none;
     }
     
     .mn-cdd.visible {
-        display: block; /* Displayed when `visible` class is added */
+        display: block;
     }
 }
 
@@ -216,28 +214,26 @@
 
     .mobile-menu {
         position: absolute;
-        top: 100%; /* Position the menu just below the navbar */
+        top: 100%;
         left: 0;
         width: 75%;
         padding: 10px 0;
-        background-color: #fff; /* Set a background color */
-        z-index: 1000; /* High z-index to appear over other elements */
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: shadow for a layered effect */
+        background-color: #fff;
+        z-index: 1000;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         transform: translateY(-100%);
         opacity: 0;
-        pointer-events: none; /* Initially hidden */
+        pointer-events: none;
     }
     
     .mobile-menu.open {
         transform: translateY(0);
         opacity: 1;
-        pointer-events: auto; /* Allow interaction when menu is open */
+        pointer-events: auto;
     }
     
-    /* Visible when open */
     .mobile-menu.open {
         display: block;
-        /* Styles for open state, such as animations */
     }
 
     .mobile-qsb-container{
@@ -247,10 +243,10 @@
     }
 
     .mn-cdd {
-        display: none; /* Hidden by default */
+        display: none;
     }
     
     .mn-cdd.visible {
-        display: block; /* Displayed when `visible` class is added */
+        display: block;
     }
 }

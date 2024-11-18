@@ -113,18 +113,18 @@
     }
     
     .to-cart-number {
-        width: 80px;  /* Set a fixed width for the input */
-        padding: 10px;  /* Add some padding for comfort */
-        border: 2px solid #ddd;  /* Light gray border */
-        border-radius: 5px;  /* Rounded corners */
-        font-size: 16px;  /* Increase font size */
-        transition: border-color 0.3s, box-shadow 0.3s;  /* Smooth transitions */
+        width: 80px;
+        padding: 10px;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: border-color 0.3s, box-shadow 0.3s;
     }
     
     .to-cart-number:focus {
-        border-color: #007bff;  /* Change border color on focus */
-        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);  /* Add a subtle shadow */
-        outline: none;  /* Remove the default outline */
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        outline: none;
     }
 }
 
@@ -242,18 +242,18 @@
     }
     
     .to-cart-number {
-        width: 80px;  /* Set a fixed width for the input */
-        padding: 10px;  /* Add some padding for comfort */
-        border: 2px solid #ddd;  /* Light gray border */
-        border-radius: 5px;  /* Rounded corners */
-        font-size: 16px;  /* Increase font size */
-        transition: border-color 0.3s, box-shadow 0.3s;  /* Smooth transitions */
+        width: 80px;
+        padding: 10px;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: border-color 0.3s, box-shadow 0.3s;
     }
     
     .to-cart-number:focus {
-        border-color: #007bff;  /* Change border color on focus */
-        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);  /* Add a subtle shadow */
-        outline: none;  /* Remove the default outline */
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        outline: none;
     }
 }
 
@@ -381,17 +381,17 @@
     }
     
     .to-cart-number {
-        width: 80px;  /* Set a fixed width for the input */
-        padding: 10px;  /* Add some padding for comfort */
-        border: 2px solid #ddd;  /* Light gray border */
-        border-radius: 5px;  /* Rounded corners */
-        font-size: 16px;  /* Increase font size */
-        transition: border-color 0.3s, box-shadow 0.3s;  /* Smooth transitions */
+        width: 80px;
+        padding: 10px;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: border-color 0.3s, box-shadow 0.3s;
     }
     
     .to-cart-number:focus {
-        border-color: #007bff;  /* Change border color on focus */
-        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);  /* Add a subtle shadow */
-        outline: none;  /* Remove the default outline */
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        outline: none;
     }
 }

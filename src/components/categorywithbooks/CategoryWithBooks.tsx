@@ -20,7 +20,6 @@ const CategoryWithBooks: React.FC<CategoryWithBooksProps> = ({ categoryId }) => 
     const [error, setError] = useState<string | null>(null);
     const [categoryName, setCategoryName] = useState<string>('');
 
-    // Function to fetch category by id and set books
     const fetchCategory = async () => {
         try {
             const category: CategoryWithBooksDto = await getCategoryById(categoryId, sortBy);
@@ -34,7 +33,7 @@ const CategoryWithBooks: React.FC<CategoryWithBooksProps> = ({ categoryId }) => 
 
     useEffect(() => {
         fetchCategory();
-    }, [sortBy, categoryId]); // Refetch whenever sortBy or categoryId changes
+    }, [sortBy, categoryId]); // Refetches whenever sortBy or categoryId changes
 
     return (
         <div className="cwb-positioner">

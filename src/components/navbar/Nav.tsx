@@ -11,7 +11,7 @@ const Nav = () => {
 
     useEffect(() => {
         handleResize(); // Initial check
-        window.addEventListener('resize', handleResize); // Add resize event listener
+        window.addEventListener('resize', handleResize); // Adds resize event listener
         return () => {
             window.removeEventListener('resize', handleResize); // Cleanup
         };

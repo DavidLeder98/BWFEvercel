@@ -117,7 +117,7 @@ const Bundle: React.FC<BundleProps> = ({ id }) => {
                     </div>
                 ))}
             </Slider>
-            {notification && <div className="notification">{notification}</div>} {/* Render notification in Bundle */}
+            {notification && <div className="notification">{notification}</div>}
         </div>
     );
 };

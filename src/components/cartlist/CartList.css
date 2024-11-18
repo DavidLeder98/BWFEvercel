@@ -56,9 +56,9 @@
     }
     
     .cl-input{
-        width: 60px; /* Adjust size as necessary */
+        width: 60px;
         padding: 5px;
-        text-align: center; /* Center the text */
+        text-align: center;
     }
     
     .cl-remove{
@@ -103,13 +103,13 @@
     
     .purchase-btn img {
         filter: invert(1);
-        transition: filter 0.3s ease; /* Smooth transition for the image */
+        transition: filter 0.3s ease;
     }
     
     .purchase-btn p {
         font-size: 1.4rem;
         color: #ffffff;
-        transition: color 0.3s ease; /* Smooth transition for the text color */
+        transition: color 0.3s ease;
     }
     
     .purchase-btn:hover {
@@ -190,9 +190,9 @@
     }
     
     .cl-input{
-        width: 60px; /* Adjust size as necessary */
+        width: 60px;
         padding: 5px;
-        text-align: center; /* Center the text */
+        text-align: center;
         margin: 0 0 0 5px;
     }
     
@@ -238,13 +238,13 @@
     
     .purchase-btn img {
         filter: invert(1);
-        transition: filter 0.3s ease; /* Smooth transition for the image */
+        transition: filter 0.3s ease;
     }
     
     .purchase-btn p {
         font-size: 1.4rem;
         color: #ffffff;
-        transition: color 0.3s ease; /* Smooth transition for the text color */
+        transition: color 0.3s ease;
     }
     
     .purchase-btn:hover {

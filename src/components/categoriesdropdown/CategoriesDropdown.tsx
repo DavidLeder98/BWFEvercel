@@ -6,9 +6,8 @@ import { useEffect, useState } from 'react';
 
 
 const CategoriesDropdown = () => {
-    const [categories, setCategories] = useState<CategoryListDto[]>([]); // State to hold categories
+    const [categories, setCategories] = useState<CategoryListDto[]>([]);
 
-    // Fetch categories when component mounts
     useEffect(() => {
         const fetchCategories = async () => {
             try {

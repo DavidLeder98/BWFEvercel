@@ -10,15 +10,14 @@ const CartListUser = () => {
     const [localBooksInCart, setLocalBooksInCart] = useState(booksInCart);
     const isLargeScreen = useMediaQuery('(min-width: 901px)');
 
-    // Update local cart state when booksInCart changes
+    // Updates local cart state when booksInCart changes
     useEffect(() => {
         setLocalBooksInCart(booksInCart);
     }, [booksInCart]);
 
-    // Fetch quantity from localStorage
+    // Fetches quantity from localStorage
     const getQuantity = (id: number) => parseInt(localStorage.getItem(`quantity_${id}`) || '1', 10);
 
-    // This function will handle removing an item from the cart
     const handleRemove = (id: number) => {
         const updatedBooks = localBooksInCart.filter(book => book.id !== id);
         setLocalBooksInCart(updatedBooks);
@@ -26,16 +25,15 @@ const CartListUser = () => {
         localStorage.removeItem(`quantity_${id}`);
     };
 
-    // This function will handle quantity changes
     const handleQuantityChange = (id: number, event: React.ChangeEvent<HTMLInputElement>) => {
-        const newQuantity = Math.max(1, parseInt(event.target.value, 10) || 1); // Default to 1 if input is invalid
+        const newQuantity = Math.max(1, parseInt(event.target.value, 10) || 1); // Defaults to 1 if input is invalid
         localStorage.setItem(`quantity_${id}`, newQuantity.toString());
         setLocalBooksInCart(prevBooks =>
             prevBooks.map(book => (book.id === id ? { ...book } : book))
         );
     };
 
-    // Calculate total price based on quantity in localStorage
+    // Calculates total price based on quantity in localStorage
     const totalPrice = localBooksInCart.reduce((sum, book) => {
         const quantity = getQuantity(book.id);
         return sum + book.price * quantity;

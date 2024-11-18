@@ -21,7 +21,6 @@ const AuthorWithBooks: React.FC<AuthorWithBooksProps> = ({ authorId }) => {
     const [authorName, setAuthorName] = useState<string>('');
     const [authorDescription, setAuthorDescription] = useState<string>('');
 
-    // Function to fetch author by id and set books
     const fetchAuthor = async () => {
         try {
             const author: AuthorWithBooksDto = await getAuthorById(authorId, sortBy);
@@ -36,7 +35,7 @@ const AuthorWithBooks: React.FC<AuthorWithBooksProps> = ({ authorId }) => {
 
     useEffect(() => {
         fetchAuthor();
-    }, [sortBy, authorId]); // Refetch whenever sortBy or authorId changes
+    }, [sortBy, authorId]); // Refetches whenever sortBy or authorId changes
 
     return (
         <div className="awb-positioner">

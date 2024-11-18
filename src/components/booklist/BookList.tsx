@@ -89,7 +89,7 @@ const BookList = ({ initialSearchTag = '' }: BookListProps) => {
                 <div className="search-tags">
                     {searchTags.map((tag, index) => (
                         <div key={index} className="search-tag">
-                            {tag} <button onClick={() => removeSearchTag(tag)}> X </button> {/* Remove tag button */}
+                            {tag} <button onClick={() => removeSearchTag(tag)}> X </button>
                         </div>
                     ))}
                 </div>

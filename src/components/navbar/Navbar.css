@@ -94,7 +94,7 @@
     
     /* login dropdown */
     .login-navitem-container {
-        position: relative; /* To position the dropdown correctly */
+        position: relative;
     }
     
     .account-dropdown {

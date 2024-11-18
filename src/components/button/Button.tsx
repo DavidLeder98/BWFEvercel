@@ -4,8 +4,8 @@ import './Button.css';
 interface ButtonProps {
     text: string;
     onClick?: () => void;
-    variant?: 'filled' | 'outlined'; // Variant for different button styles
-    color?: 'red' | 'gray' | 'blue' | 'green'  | 'black'; // Add color options
+    variant?: 'filled' | 'outlined'; // Variants for different button styles
+    color?: 'red' | 'gray' | 'blue' | 'green'  | 'black'; // color options
     disabled?: boolean;
 }
 

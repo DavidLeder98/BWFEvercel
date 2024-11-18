@@ -22,22 +22,22 @@
     
     .aa-search-bar[type="text"] {
         padding: 10px 15px; /* Padding inside the input and select */
-        border: 1px solid #ccc; /* Border color */
-        border-radius: 5px; /* Rounded corners */
-        font-size: 16px; /* Font size */
-        transition: border-color 0.3s, box-shadow 0.3s; /* Transition for border color and shadow */
-        width: 100%; /* Make them full width of their container */
-        max-width: 300px; /* Max width for input and select */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: border-color 0.3s, box-shadow 0.3s;
+        width: 100%;
+        max-width: 300px;
     }
     
     .aa-search-bar[type="text"]:focus {
-        outline: none; /* Remove default outline */
-        border-color: #007BFF; /* Change border color on focus */
-        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a shadow effect on focus */
+        outline: none;
+        border-color: #007BFF;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
     }
     
     .aa-search-bar[type="text"]::placeholder {
-        color: #aaa; /* Placeholder color */
+        color: #aaa;
     }
     
     .aa-ul{
@@ -79,21 +79,21 @@
     
     .aa-search-bar[type="text"] {
         padding: 10px 15px; /* Padding inside the input and select */
-        border: 1px solid #ccc; /* Border color */
-        border-radius: 5px; /* Rounded corners */
-        font-size: 16px; /* Font size */
-        transition: border-color 0.3s, box-shadow 0.3s; /* Transition for border color and shadow */
-        width: 100%; /* Make them full width of their container */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: border-color 0.3s, box-shadow 0.3s;
+        width: 100%;
     }
     
     .aa-search-bar[type="text"]:focus {
-        outline: none; /* Remove default outline */
-        border-color: #007BFF; /* Change border color on focus */
-        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a shadow effect on focus */
+        outline: none;
+        border-color: #007BFF;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
     }
     
     .aa-search-bar[type="text"]::placeholder {
-        color: #aaa; /* Placeholder color */
+        color: #aaa;
     }
     
     .aa-ul{

@@ -7,35 +7,34 @@ import downarrow from '../../assets/icons/downarrow.png';
 import { Link } from 'react-router-dom';
 import QuickSearchBar from '../quicksearch/QuickSearchBar';
 import CategoriesDropdown from '../categoriesdropdown/CategoriesDropdown';
-import { useAuth } from '../../services/account/AuthContext'; // Import the useAuth hook
-import { useCartGuest } from '../../services/cart/CartContextGuest'; // Import the useCartGuest hook
-import { useCartUser } from '../../services/cart/CartContextUser'; // Import the useCartUser hook
+import { useAuth } from '../../services/account/AuthContext';
+import { useCartGuest } from '../../services/cart/CartContextGuest';
+import { useCartUser } from '../../services/cart/CartContextUser';
 import { useEffect, useState } from 'react';
 
 const Navbar = () => {
-    const { isAuthenticated, logout, username, role } = useAuth(); // Use the useAuth hook
-    const { cartItems } = useCartGuest(); // Get cartItems from CartContextGuest
-    const { booksInCart } = useCartUser(); // Get booksInCart from CartContextUser
+    const { isAuthenticated, logout, username, role } = useAuth();
+    const { cartItems } = useCartGuest();
+    const { booksInCart } = useCartUser();
 
-    // Calculate the total quantity of items in the guest cart
+    // Calculates the total quantity of items in the guest cart
     const guestCartItemCount = cartItems.reduce((total, item) => total + item.quantity, 0);
 
-    // Calculate the total quantity of items in the user's cart
+    // Calculates the total quantity of items in the user's cart
     const [userCartItemCount, setUserCartItemCount] = useState(0);
 
     useEffect(() => {
-        // Calculate and set user cart count
+        // Calculates and set user cart count
         const count = booksInCart.reduce((total, item) => total + (localStorage.getItem(`quantity_${item.id}`) ? parseInt(localStorage.getItem(`quantity_${item.id}`)!) : 0), 0);
         setUserCartItemCount(count);
-    }, [booksInCart]); // Depend on booksInCart
+    }, [booksInCart]); // Dependent on booksInCart
 
-    // Handle logout click
     const handleLogout = async () => {
         try {
-            await logout(); // Call the logout function from context
-            window.location.href = "/"; // Redirect to home or any other route after logout
+            await logout();
+            window.location.href = "/";
         } catch (error) {
-            console.error("Logout failed:", error); // Handle logout error
+            console.error("Logout failed:", error);
         }
     };
 
@@ -67,9 +66,9 @@ const Navbar = () => {
                             <>
                                 <p className="nav-username">{username}</p>
                                 {role === 'Admin' ? (
-                                    <Link to="/admin" className="dropdown-item cna">Manage Content</Link> // Admin link
+                                    <Link to="/admin" className="dropdown-item cna">Manage Content</Link>
                                 ) : (
-                                    <Link to="/account" className="dropdown-item cna">Manage Account</Link> // Regular user link
+                                    <Link to="/account" className="dropdown-item cna">Manage Account</Link>
                                 )}
                                 <Link to="#" onClick={handleLogout} className="dropdown-item lini">Logout</Link>
                             </>
@@ -86,9 +85,9 @@ const Navbar = () => {
                         <img src={cart} alt="Shopping cart icon" className="cart-icon" />
                     </Link>
                     {isAuthenticated ? (
-                        <div className="nav-cart-count">{userCartItemCount > 0 ? userCartItemCount : '0'}</div> // User cart item count
+                        <div className="nav-cart-count">{userCartItemCount > 0 ? userCartItemCount : '0'}</div>
                     ) : (
-                        <div className="nav-cart-count">{guestCartItemCount > 0 ? guestCartItemCount : '0'}</div> // Guest cart item count
+                        <div className="nav-cart-count">{guestCartItemCount > 0 ? guestCartItemCount : '0'}</div>
                     )}
                 </div>
             </div>
