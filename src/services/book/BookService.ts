@@ -33,14 +33,14 @@ export const getBooks = async (searchTerm?: string, sortBy: SortBy = SortBy.Id):
         return response.data;
     } catch (error) {
         console.error('Error fetching books:', error);
-        throw error; // Rethrow the error to handle it later in the component
+        throw error; // Rethrows the error to handle it later in the component
     }
 };
 
 // for details page
 export const getBookById = async (id: number): Promise<BookDetailsDto> => {
     try {
-        const response = await axios.get<BookDetailsDto>(`${API_URL}/${id}`); // Use API_URL constant
+        const response = await axios.get<BookDetailsDto>(`${API_URL}/${id}`);
         return response.data;
     } catch (error) {
         console.error("Error fetching book by ID:", error);
@@ -48,11 +48,10 @@ export const getBookById = async (id: number): Promise<BookDetailsDto> => {
     }
 };
 
-// Create a new book
 export const createBook = async (bookData: BookCreateDto): Promise<BookDetailsDto> => {
     const formData = new FormData();
     
-    // Append book details to form data
+    // Appends book details to form data
     formData.append('Title', bookData.Title);
     formData.append('Description', bookData.Description);
     formData.append('Rating', bookData.Rating.toString());
@@ -61,12 +60,12 @@ export const createBook = async (bookData: BookCreateDto): Promise<BookDetailsDt
     formData.append('Price', bookData.Price.toString());
     formData.append('AuthorId', bookData.AuthorId.toString());
 
-    // Append category IDs
+    // Appends category IDs
     bookData.CategoryIds.forEach((categoryId) => {
         formData.append('CategoryIds', categoryId.toString());
     });
 
-    // Append image files if they exist
+    // Appends image files if they exist
     if (bookData.ImageFile) {
         formData.append('ImageFile', bookData.ImageFile);
     }
@@ -74,7 +73,7 @@ export const createBook = async (bookData: BookCreateDto): Promise<BookDetailsDt
         formData.append('LargeImageFile', bookData.LargeImageFile);
     }
 
-    // Make the POST request to create a book
+    // Makes the POST request to create a book
     const response = await axios.post<BookDetailsDto>(API_URL, formData, {
         headers: {
             'Content-Type': 'multipart/form-data',
@@ -87,7 +86,7 @@ export const createBook = async (bookData: BookCreateDto): Promise<BookDetailsDt
 export const updateBook = async (bookData: BookUpdateDto) => {
     const formData = new FormData();
     
-    // Append all necessary fields to the formData object
+    // Appends all necessary fields to the formData object
     formData.append('Id', bookData.id.toString());
     formData.append('Title', bookData.Title);
     formData.append('Description', bookData.Description);
@@ -97,7 +96,7 @@ export const updateBook = async (bookData: BookUpdateDto) => {
     formData.append('Price', bookData.Price.toString());
     formData.append('AuthorId', bookData.AuthorId.toString());
     
-    // Append image files if they exist
+    // Appends image files if they exist
     if (bookData.ImageFile) {
       formData.append('ImageFile', bookData.ImageFile);
     }
@@ -106,7 +105,7 @@ export const updateBook = async (bookData: BookUpdateDto) => {
       formData.append('LargeImageFile', bookData.LargeImageFile);
     }
   
-    // Append category IDs without index
+    // Appends category IDs without index
     bookData.CategoryIds.forEach((categoryId) => {
       formData.append('CategoryIds', categoryId.toString());
     });
@@ -124,13 +123,12 @@ export const updateBook = async (bookData: BookUpdateDto) => {
     }
   };
 
-  // Delete a book by ID
 export const deleteBook = async (id: number): Promise<BookDetailsDto> => {
     try {
         const response = await axios.delete<BookDetailsDto>(`${API_URL}/${id}`);
-        return response.data; // Optionally, you can return the deleted book or a success message
+        return response.data;
     } catch (error) {
         console.error("Error deleting book:", error);
-        throw error; // Rethrow the error to handle it later in the component
+        throw error;
     }
 };

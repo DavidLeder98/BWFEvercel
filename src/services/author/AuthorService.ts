@@ -7,7 +7,6 @@ import { SortBy } from '../book/SortBy';
 
 const API_URL = 'https://bookwyrmapi2.azurewebsites.net/api/author';
 
-// get list of authors
 export const getAuthors = async (searchTerm?: string): Promise<AuthorListDto[]> => {
     try {
         const response = await axios.get<AuthorListDto[]>(`${API_URL}`, {
@@ -20,31 +19,28 @@ export const getAuthors = async (searchTerm?: string): Promise<AuthorListDto[]> 
     }
 };
 
-// get author by id
 export const getAuthorById  = async (id: number, sortBy: SortBy = SortBy.Id): Promise<AuthorWithBooksDto> => {
     try {
         const response = await axios.get<AuthorWithBooksDto>(`${API_URL}/${id}`, {
             params: { sortBy },
         });
-        return response.data; // Return the category with its associated books
+        return response.data;
     } catch (error) {
         console.error(`Error fetching category by id (${id}):`, error);
-        throw error; // Rethrow the error for further handling
+        throw error;
     }
 };
 
-// create a new author
 export const createAuthor = async (authorCreateDto: AuthorCreateDto): Promise<AuthorListDto> => {
     try {
         const response = await axios.post<AuthorListDto>(API_URL, authorCreateDto);
-        return response.data; // Return the newly created author
+        return response.data;
     } catch (error) {
         console.error('Error creating author:', error);
-        throw error; // Rethrow the error for further handling
+        throw error;
     }
 };
 
-// update an existing author
 export const updateAuthor = async (id: number, authorEditDto: AuthorEditDto): Promise<void> => {
     try {
         await axios.put(`${API_URL}/${id}`, authorEditDto);
@@ -54,7 +50,6 @@ export const updateAuthor = async (id: number, authorEditDto: AuthorEditDto): Pr
     }
 };
 
-// delete an author
 export const deleteAuthor = async (id: number): Promise<void> => {
     try {
         await axios.delete(`${API_URL}/${id}`);

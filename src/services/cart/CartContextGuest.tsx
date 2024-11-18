@@ -34,12 +34,12 @@ const CART_STORAGE_KEY = 'guest_cart';
 
 export const CartProviderGuest = ({ children }: { children: ReactNode }) => {
     const [cartItems, setCartItems] = useState<CartItemGuest[]>(() => {
-        // Load cart items from local storage on initial render
+        // Loads cart items from local storage on initial render
         const storedCart = localStorage.getItem(CART_STORAGE_KEY);
         return storedCart ? JSON.parse(storedCart) : [];
     });
 
-    // Update local storage whenever cartItems changes
+    // Updates local storage whenever cartItems changes
     useEffect(() => {
         localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cartItems));
     }, [cartItems]);
@@ -63,7 +63,7 @@ export const CartProviderGuest = ({ children }: { children: ReactNode }) => {
 
     const clearCart = () => {
         setCartItems([]);
-        localStorage.removeItem(CART_STORAGE_KEY); // Optional, based on your needs
+        localStorage.removeItem(CART_STORAGE_KEY);
     };
 
     const updateItemQuantity = (id: number, quantity: number) => {

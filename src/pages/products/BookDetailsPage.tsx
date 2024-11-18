@@ -6,15 +6,15 @@ import { useEffect } from 'react';
 import PageEnd from "../../components/pageend/PageEnd";
 
 const BookDetailsPage: React.FC = () => {
-    const { id } = useParams<{ id: string }>(); // Use the useParams hook to get the book ID
-    const bookId = id ? parseInt(id, 10) : undefined; // Convert the ID to a number, or set it to undefined if invalid
+    const { id } = useParams<{ id: string }>();
+    const bookId = id ? parseInt(id, 10) : undefined;
 
     useEffect(() => {
-        window.scrollTo(0, 0); // Scroll to top whenever id changes
-    }, [id]); // Trigger this effect every time the book ID changes
+        window.scrollTo(0, 0); // Scrolls to top whenever id changes
+    }, [id]); // Triggers every time the book ID changes
 
     if (bookId === undefined) {
-        return <Navigate to="/404" />; // Redirect to a 404 page if no valid ID is provided
+        return <Navigate to="/404" />; // Redirects to a 404 page if no valid ID is provided
     }
 
     return (

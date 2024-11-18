@@ -8,14 +8,13 @@ const AllBooksPage = () => {
     }, []);
 
     const [searchParams] = useSearchParams();
-    const searchTag = searchParams.get('search') || ''; // Get the search term from the URL
+    const searchTag = searchParams.get('search') || ''; // Gets the search term from the URL
 
     useEffect(() => {
-        // Handle search term updates here when URL changes
-    }, [searchTag]); // Re-run this effect when the search tag in the URL changes
+    }, [searchTag]);
 
     return (
-        <BookList initialSearchTag={searchTag} /> // Pass the search term as a prop
+        <BookList initialSearchTag={searchTag} />
     );
 };
 

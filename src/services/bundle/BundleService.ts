@@ -17,10 +17,9 @@ export const getBundle = async (id: number): Promise<BundleWithBooksDto> => {
     }
 };
 
-// Get all bundles
 export const getAllBundles = async (): Promise<BundleListDto[]> => {
     try {
-        const response = await axios.get<BundleListDto[]>(API_URL); // Hits the /api/bundle endpoint
+        const response = await axios.get<BundleListDto[]>(API_URL);
         return response.data;
     } catch (error) {
         console.error("Error fetching bundles list:", error);
@@ -28,7 +27,6 @@ export const getAllBundles = async (): Promise<BundleListDto[]> => {
     }
 };
 
-// Get a bundle with book list by ID for the admin panel
 export const getBundleWithBookList = async (id: number): Promise<BundleWithBookListDto> => {
     try {
         const response = await axios.get<BundleWithBookListDto>(`${API_URL}/adminpanel/${id}`);
@@ -39,10 +37,9 @@ export const getBundleWithBookList = async (id: number): Promise<BundleWithBookL
     }
 };
 
-// Update a bundle
 export const updateBundle = async (bundleUpdateDto: BundleUpdateDto): Promise<void> => {
     try {
-        await axios.put(API_URL, bundleUpdateDto); // Hits the /api/bundle endpoint
+        await axios.put(API_URL, bundleUpdateDto);
     } catch (error) {
         console.error("Error updating bundle:", error);
         throw error;
